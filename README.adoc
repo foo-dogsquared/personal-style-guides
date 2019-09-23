@@ -1,0 +1,71 @@
+= Personal Style Guides 
+
+A repo where it contains my general personal style guides for various fields such as writing and typography. 
+
+
+
+
+== What is a style guide? 
+
+A style guide is a set of guidelines commonly set for writing, documents, and designs. 
+It is used to keep the publications and other files to be consistent and organized. 
+
+There are various style guides for a wide range of topics such as general writing, academic writing, technical writing, codes, design, documentation structure, business writing, and standards creation. 
+Here's a list of example style guides for various topics.  
+
+* programming 
+** http://getbem.com/naming/[CSS BEM] 
+** https://github.com/airbnb/javascript[AirBnB JavaScript style guide] 
+** https://www.python.org/dev/peps/pep-0008/[Python Enhancement Proposals (PEP) 8] 
+** https://google.github.io/styleguide/cppguide.html[Google C++ style guide]
+
+* general writing 
+** http://www.gutenberg.org/ebooks/37134[The Elements of Style] 
+** https://en.wikipedia.org/wiki/Wikipedia%3aManual_of_Style[Wikipedia Manual of Style]
+** https://www.ox.ac.uk/sites/files/oxford/media_wysiwyg/University%20of%20Oxford%20Style%20Guide.pdf[Oxford Style Guide]
+
+* academic writing 
+** http://www.chicagomanualofstyle.org/book/ed17/frontmatter/toc.html[Chicago Manual of Style]
+** http://irsc.libguides.com/mla[MLA style guide] 
+** https://www.chicagomanualofstyle.org/turabian.html[Turabian style] 
+
+* citations 
+** https://ieee-dataport.org/sites/default/files/analysis/27/IEEE%20Citation%20Guidelines.pdf[IEEE citation style] 
+** https://www.chicagomanualofstyle.org/turabian/turabian-notes-and-bibliography-citation-quick-guide.html[Turabian style] 
+** https://www.iso.org/standard/43320.html[ISO 690] 
+
+* design
+** https://www.ibm.com/design/language/[IBM designs] 
+** https://material.io/design/[Google Material] 
+** https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/[Apple interface guidelines] 
+
+* technical writing 
+** https://www.ibm.com/developerworks/library/styleguidelines/index.html[developerWorks editorial style guide] 
+** http://stylepedia.net/style/[The Red Hat Style Guide] 
+** https://docs.microsoft.com/en-us/style-guide/welcome/[Microsoft Writing Style Guide] 
+** https://web.archive.org/web/20181123152321/http://www.techprose.com/assets/techwriting_guidelines.pdf[TechProse Technical Writing Guidelines]
+
+Since style guides are usually created to fit the purposes of the company/organization/whoever that made it, it is recommended to create your own. 
+Don't worry, it's not that hard (unlike rolling your own license or a cyptographic algorithm). 
+All you have to do is to observe how others establish their style guide, cherry-pick their standards that best fitted to your needs, and combine them under your own. 
+
+For personal purposes, think of style guides as your cheatsheet. 
+
+
+
+
+== What topics my personal style guides covers? 
+
+Whatever stuff I find interesting and don't want to deal with future headaches and chaos. 
+Primarily, I made one for writing and typography. 
+It may expand on that over time. 
+
+
+
+
+== License 
+
+Feel free to fork as you like as it is released under MIT license. 
+Please see the link:LICENSE[original license file] for more information. 
+
+© 2019 foo-dogsquared
