@@ -1,0 +1,130 @@
+= Writing style guide
+Gabriel Arazas <foo.dogsquared@gmail.com>
+2019-09-23
+
+Here's my general style guide for writing for future references. 
+As such, this is updated periodically. 
+
+Most of the rules set here are the result of me being lazy and avoiding future migraines. 
+
+This aims to save time on searching, archiving, and editing your document. 
+It also enforces consistency with the target persona. 
+
+This writing style guide is based from multiple sources. 
+This is mainly inspired from http://www.cs.uky.edu/~raphael/writing.html[_Hints on writing style_], https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/[_A beginner’s guide to writing documentation_ from "Write the Docs"], https://docs.microsoft.com/en-us/style-guide/welcome/[_Microsoft Writing Style Guide_], and https://www.ox.ac.uk/sites/files/oxford/media_wysiwyg/University%20of%20Oxford%20Style%20Guide.pdf[_University of Oxford Style Guide_]. 
+
+
+
+
+== Write one sentence per line 
+
+There are no character limits per line enforced but be practical with the limit. 
+The https://sembr.org/[Semantic Line Breaks] does not apply here since it is too fuzzy. 
+Instead, I'll make it one sentence for all types. 
+
+For clarification, sentences that are connected with a semicolon are considered two sentences. 
+They need to be in separated lines. 
+
+In writing with https://asciidoctor.org/[Asciidoctor], there are cases where this particular rule will break. 
+In case that the sentence is filled with macros (commonly footnotes) then we apply the semantic line breaks here. 
+
+
+
+
+== Document structure 
+
+Regarding the document itself, it should follow the set guidelines below. 
+
+* The document title should be formatted in sentence case (only capitalize the first word). 
+Proper nouns should be capitalized correctly. 
+* A revision string should be present in all documents. 
+This could be the Git commit hash or the modified datestamp in https://www.iso.org/iso-8601-date-and-time-format.html[ISO 8601]. 
+* A list of authors. 
+* A list of contributors (if the document is open for contributions). 
+Since not all documents are applied with Git, the latter is preferred. 
+* All types of headers within the document are in sentence case. 
+* In case the document will use sectioning numbers, stay with using numbers to easily recognize the hierarchy. 
+
+
+
+
+== Raw source spacing 
+
+While the output may be the same, it is still important for the raw source to be readable. 
+Hence, there is a need to space out certain parts of a raw document. 
+
+It will also make it easier to read and maintain the document. 
+
+* If possible, main title (`<h1>` or any equivalent) should be in the first line.
+* Headers (`<h2>` or any equivalent) should be preceded by four newlines. 
+* All types of subheaders (`<h3>`, ..., `<h6>` or any equivalent) should be preceded by two newlines. 
+* There should be a newline before the end of the document. 
+* Once a list item contains sublists, the entire list should be spaced out. 
+
+
+
+
+== General style
+
+* Use simple language even in a technical document. 
+* Write in informal tone. 
+* Write the content in present tense. 
+* Ensure sentences are written https://www.grammarly.com/blog/parallelism/[in parallel]. 
+* Avert using double negatives (e.g. "not unusual" and "no different"). 
+Phrases such as "not less than" are still accepted if it's used mathematically. 
+* For introducing abbreviations, write out the full name first then the abbreviation in parenthesis. 
+Then you can now use the abbreviated form after. 
+* Restrict the number of sentences in each paragraph to have a maximum of 10. 
+* Avoid using unit symbols (like `"` for inches) in writing. 
+* No emojis! >:-D 
+* Emoticons are accepted and should be used sparingly. 
+
+
+
+
+== Text formatting
+
+* Use boldface only for emphasizing. 
+* Use italics for referring to a title of a work such as the title of an article, book, audio, or video. 
+* Avoid using underlines, strikethroughs, and all caps. 
+* Typeblock elements (e.g. paragraphs, images, and equations) should be spaced out in the raw source. 
+
+
+
+
+== Numbers 
+
+* Spell out the numbers 1 to 10. 
+If you have multiple numbers in the same sentence, you can use the figures instead. 
+* Use appropriate units for the numbers. 
+* The same applies for ordinal numbers. 
+Spell out 1st to 10th unless you have multiple ordinals. 
+* Don't use superscript for ordinal numbers. 
+* Strictly write with 24-hour clock (i.e. 10:23, 22:41). 
+* Use https://www.iso.org/iso-8601-date-and-time-format.html[ISO 8601] to refer to dates and datetime. 
+
+
+
+
+== Lists
+
+* For ordered lists, avoid using roman numerals and letters. 
+Only use numbers similarly to sectioning numbers for hierarchy. 
+* If a list is introduced as if it's a part of the sentence, punctuate the list items and the connecting sentence correctly. 
+Otherwise, start with each list item as if it's another paragraph. 
+* Use https://www.grammarly.com/blog/what-is-the-oxford-comma-and-why-do-people-care-so-much-about-it/[serial commas]. 
+* Once a list item contains sublists, the entire list should be spaced out in raw source. 
+* Avoid using nested lists two levels deep. 
+
+
+
+
+== References 
+
+* For referring to articles, books, videos, audio, and images, the title should be written exactly as they are. 
+If the title is stylized (written all uppercase or lowercase, for example), format it in sentence case. 
+* Titles should be italicized. 
+If it's not possible, enclose them in quotation marks. 
+* If you include the author, enclose them in quotation marks. 
+* If you want to cite a source similarly to academic writings, use the https://www.bibme.org/citation-guide/apa/[APA citation style]. 
+* For bibliography or reference list, use https://www.bibme.org/citation-guide/apa/[APA style] for citations. 
