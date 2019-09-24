@@ -1,0 +1,138 @@
+= Projects style guide 
+Gabriel Arazas <foo.dogsquared@gmail.com>
+2019-09-23
+
+It describes is my general projects style guide that tackles from its structure to its purpose. 
+This can make the process of project organization (for pet projects, that is) smoother. 
+
+Chances that the conditional scenarios (i.e. the project became advanced enough) may never happen but it's good to have a plan than nothing. 
+
+
+
+
+== Root folder structure 
+
+In general, my projects ranging from software, 3D modelling, to writing LaTeX documents should always have the listed files and folders.  
+
+* `README` for describing my project. 
+* `docs/` folder for containing files from images to other documents on my documentation. 
+* `LICENSE` to indicate what license does my project assigned to. 
+
+In certain scenarios, the following files may be added. 
+
+* `src/` folder in case the project is big enough. 
+As indicated by the name, this will contain the source files. 
+footnote:[This is not applicable nor suitable with all types of projects (https://www.djangoproject.com/[Django] projects, for example). 
+The name of the folder can be replaced freely if it's not suitable.] 
+* `MANUAL` describes the project in detail. 
+This can be added in case the project documentation is big enough that a single README cannot be fitted to wholly describe the project. 
+* `CONTRIBUTING` contains the instructions to set up the project and the style guide of the project. 
+This will be present if I made the project open source and welcome contributions. 
+* `CHANGELOG` documents the changes made throughout the project. 
+It will use the https://keepachangelog.com/[Keep A Changelog standard]. 
+This file should be present if I start to assign versions my project. 
+* `CODE_OF_CONDUCT` illustrate the ethical and legal behavior everyone should observe. 
+It is present if you assign your project to be open to contributions. 
+
+
+
+
+== README 
+
+The README is the first file users usually look for. 
+It introduces them to the project from its purpose to its usage. 
+
+There are a ton of ways on how to write a README but for consistency, here's the standard template for the README. 
+
+* The project title. 
+* An abstract where it explains the purpose of the project. 
+Often, they are only composed of one sentence. 
+* A dedicated demo section. 
+May contain either screenshots or a live website of the project. 
+* Homepage and other links the users may refer to. 
+* A "Getting Started" guide where the prerequisites, installation instructions, and basic usage are written. 
+* A contributing guide section where it details on setting up the project for development and the style guides contributors have to follow. 
+* License assigned for the project. 
+
+You may also set your README to provide comprehensive and detailed documentations. 
+Here are the following things you may want to add. 
+
+* A more detailed usage guide. 
+Though, it is written to another document. 
+* The project structure section that describes it in whole. 
+Usually, these are large enough to be written on the `docs/` or the `MANUAL` so it is linked to those documents instead. 
+
+Remember, the README is written for the user. 
+When writing the README, always read it in the perspective of a curious new user. 
+
+The general rule of writing README is write with simple language, create enticing elements such as screenshots and videos (or GIFs) for the project, and provide all the starting details they need to know. 
+
+
+
+
+== Manual 
+
+The manual (usually named as `MANUAL`) is a document that holds more details than the README. 
+
+This file is present if the project is detailed enough that the README cannot hold all of the information regarding the project. 
+
+For clarification, the manual serves an entirely different purpose from the README. 
+The README is more of a "Getting Started" guide while a manual is a more detailed document. 
+Note that the README can also be a detailed document but it is more applicable if the project is simple. 
+
+The manual is made to be standalone and independent of the README. 
+Its structure is also more of a README plus a reference guide where it contains all of the information the user may need to know. 
+As such it has the same structure as a README albeit with a more detailed API references. 
+Still, there's a list of the parts of manual for easy referencing detailed below. 
+
+* The project title. 
+* The abstract and/or one-liner that describes the project and its purpose. 
+* The prerequisites of the project that needs to be taken care of first. 
+* A dedicated demo section. 
+* Homepage and other links the users may refer to. 
+* Installation instructions. 
+* A section detailing the building the output of the project. 
+* A section for basic usage. 
+* A part that describes on advanced usage. 
+* The available APIs (if it's a programming project). 
+* An introduction to the project structure. 
+* Details on the style guides the project follow. 
+* A portion for contributing guidelines. 
+* Information about the license.  
+
+If the manual is not enough to fill out the project, then you may expand on creating a dedicated folder on documentation and create the more detailed stuff over there. 
+In that case, the manual now serves as an entry way for the detailed stuff. 
+
+
+
+
+== CONTRIBUTING 
+
+The file is a dedicated section for setting up the project for development. 
+It is mainly intended for contributors and anybody who want to try it out on their own machine. 
+
+This contain details on setting up the project including the prerequisites, installation instruction, and the style guides the project follows. 
+
+This is mostly included in the README and the manual but it is appreciated to have this in its own file for easy reference. 
+
+
+
+
+== The documentation folder 
+
+The documentation folder (usually named `docs/`) contains the assets (e.g. images, videos) and other documents. 
+This is also where the more detailed documents are stored. 
+
+This should be present if the project is getting more complex or is in need of more documentation that the manual cannot hold much anymore. 
+
+Generally, it also introduces into the internals of the project from its source structure, data structures and design, and general abstractions. 
+
+* The `design` file describes the data design the project uses. 
+Examples include the database schema, data structure, and a sample of the data. 
+
+* The `structure` file describes the files and folders that is actively referred. 
+It explains the purpose and 
+
+* The `concepts` file teaches the general abstractions the project uses. 
+
+You may avert following the convention as long as the documentation folder structure is intuitive. 
