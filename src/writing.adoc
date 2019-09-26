@@ -48,6 +48,20 @@ Since not all documents are applied with Git, the latter is preferred.
 
 
 
+== Document sections 
+
+There are different kinds and parts of a document. 
+Nonetheless, title of chapters, sections, subsections, parts, and the document itself should be written in sentence case. 
+
+For easy reference, there's a following list of parts of a document that should be written in sentence case. 
+
+* The document title. 
+* The parts and chapters, if it's a book. 
+* The sections and its subsections. 
+
+
+
+
 == Raw source spacing 
 
 While the output may be the same, it is still important for the raw source to be readable. 

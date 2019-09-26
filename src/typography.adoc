@@ -11,7 +11,7 @@ It's best to take it with a grain of salt.
 It's also just enough for my basic needs. 
 
 Most of the rules set here are inspired from https://practicaltypography.com/[_Practical Typography_] by Matthew Butterick. 
-Other references include http://www.texdoc.net/texmf-dist/doc/latex/memoir/memman.pdf[LaTeX memoir class documentation]. 
+Other references include http://www.texdoc.net/texmf-dist/doc/latex/memoir/memman.pdf[LaTeX memoir class documentation] and http://texdoc.net/texmf-dist/doc/fonts/memdesign/memdesign.pdf[_A Few Notes on Book Design_]. 
 
 Like most of the style guides, I created this just to save some future headaches and to enforce consistency between my projects. 
 
@@ -89,12 +89,6 @@ Preferrably, it should be black (or closer to black).
 The rest of the colors are classified as the accents with one of them considered to be the primary color of the document. 
 If there are more than one accent color, it is preferred to get the triadic colors of the primary color. 
 
-As of 2019-09-23, here's the color scheme (written as hex codes) for my brand and documents. 
-
-* `#ffffff` as the foreground. 
-* `#000000` as the background. 
-* `#{main-color}` as the accent color. 
-
 
 === Alternative color scheming 
 
@@ -108,7 +102,17 @@ In this case, the background should now be the foreground and vice versa.
 As for your accents, the easy way out would be choosing its https://color-wheel-artist.com/complementary-colors-defined/[complement]. 
 You could also make the accent the same but make sure it stands out in the document. 
 
-For my alternative theme, I use the following main colors for my brand.
+
+
+== Brand 
+
+As of 2019-09-23, here's the color scheme (written as hex codes) for my brand. 
+
+* `#ffffff` as the foreground. 
+* `#000000` as the background. 
+* `#{main-color}` as the accent color. 
+
+For my alternative darker theme, I use the following main colors for my brand.
 
 * `#ffffff` as the foreground. 
 * `#000000` as the background. 
@@ -150,6 +154,7 @@ In this way, you can easily inline the CSS style for your site and only wait for
 
 
 == Content formatting 
+
 
 === Links 
 

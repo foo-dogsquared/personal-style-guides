@@ -136,3 +136,11 @@ It explains the purpose and
 * The `concepts` file teaches the general abstractions the project uses. 
 
 You may avert following the convention as long as the documentation folder structure is intuitive. 
+
+
+=== Special purpose documents 
+
+If by any circumstances the project will feature a document for special purposes. 
+Create the appropriate folder with the prefix `special-` in the documentations. 
+
+For example, if you want to feature a book made from https://www.latex-project.org/[LaTeX] documents, then make a folder named `special-book` and place the LaTeX source files there. 
