@@ -2,6 +2,8 @@
 
 A repo where it contains my general personal style guides for various fields such as writing and typography. 
 
+Also serves as my first technical writing project. 
+
 
 
 
@@ -60,12 +62,25 @@ Whatever stuff I find interesting and don't want to deal with future headaches a
 Primarily, I made one for writing and typography. 
 It may expand on that over time. 
 
+You can find them at link:src/[`src/`] directory. 
+
+
+
+
+== Contributing 
+
+You can give feedback simply by shooting me an email or filing an issue on the issue tracker. 
+Feel free to argue on what's better or worse. 
+
+You can also make a pull request for wrong spellings or grammar. 
+However, don't make a pull request only because you think a certain rule is better (or worse). 
+
 
 
 
 == License 
 
-Feel free to fork as you like as it is released under MIT license. 
+Feel free to modify as you like as it is released under MIT license. 
 Please see the link:LICENSE[original license file] for more information. 
 
 © 2019 foo-dogsquared
