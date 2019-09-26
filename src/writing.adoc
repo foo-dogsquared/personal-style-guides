@@ -1,6 +1,7 @@
 = Writing style guide
 Gabriel Arazas <foo.dogsquared@gmail.com>
 2019-09-23
+:toc:
 
 Here's my general style guide for writing for future references. 
 As such, this is updated periodically. 

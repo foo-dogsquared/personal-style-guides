@@ -1,6 +1,7 @@
 = Typography style guide 
 Gabriel Arazas <foo.dogsquared@gmail.com>
 2019-09-23
+:toc:
 
 :main-color: d59783
 :alternate-main-color: d37151

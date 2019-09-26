@@ -1,6 +1,7 @@
 = Projects style guide 
 Gabriel Arazas <foo.dogsquared@gmail.com>
 2019-09-23
+:toc:
 
 It describes is my general projects style guide that tackles from its structure to its purpose. 
 This can make the process of project organization (for pet projects, that is) smoother. 
