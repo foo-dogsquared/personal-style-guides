@@ -1,0 +1,34 @@
+\NeedsTeXFormat{LaTeX2e}
+
+% This is based on this TeX Stack Exchange discussion
+% https://tex.stackexchange.com/a/356466
+\ProvidesPackage{docs-ifrootdocument}[2019-07-09]
+
+\RequirePackage{standalone}
+
+% Some terminologies:
+% root document - The document where it has no parent document (or no 
+%                 document that is being imported) at the time of compilation.
+% parent document - A document that has an imported document. Take note that the root
+%                   document is always a parent document.
+% child document - A document that is being imported by the parent document. Only the 
+%                  root document is not classified as a child document.
+
+% declaring a new \if macro, setting \rootdocument
+\newif\ifrootdocument
+
+% default value will go true since it dictates the doc as a top level or not
+% thus, it'll always be true for the top level document
+\rootdocumenttrue
+
+% a command for importing files
+% NOTE: this must be used for this package to function as it should be, 
+%       otherwise, all of the child documents will be considered a root document
+\newcommand*\inputchilddocument[1]{%
+  \begingroup
+    % we simply set the \rootdocument to false for the child instances
+    \rootdocumentfalse
+    \input{#1}%
+  \endgroup
+}
+\endinput

@@ -1,0 +1,31 @@
+\NeedsTeXFormat{LaTeX2e}
+
+\ProvidesPackage{docs-title-page}[2019-07-09]
+
+% styling the part page divsioning
+\renewcommand*{\thepart}{\arabic{part}}
+\renewcommand*{\partnamefont}{\Large\textsf}
+\renewcommand*{\partnumfont}{\Huge\emph}
+\renewcommand*{\parttitlefont}{\Huge\textsf} 
+\renewcommand*{\midpartskip}{\par{\hrulefill}\par}
+
+% reformatting the title page from the \maketitle command
+\renewcommand*{\maketitle}{%
+    % mostly intended for doc class 'memoirs' since they only have the `titlingpage` env
+    \begin{titlingpage}
+        \raggedleft
+        \vspace{20pt}
+        {\Huge\bfseries\textsf{\@title}\unskip\strut\par}
+        \vspace{25pt}
+        {\Large\itshape\@author\unskip\strut\par}
+        
+        \vfill
+        
+        {\large \@date\par}
+    \end{titlingpage}
+}
+
+\newcommand*{\doctitle}{\@title}
+\newcommand*{\docauthor}{\@author}
+
+\endinput

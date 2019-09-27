@@ -1,0 +1,49 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{docs-admonition-blocks}[2019-07-08]
+
+% tcolorbox package doesn't accept HSB color model so we'll set
+% an option for recognizing RGB values and converting it back to HSB instead
+\RequirePackage{fontawesome}
+\RequirePackage{chngcntr}
+\RequirePackage[most]{tcolorbox}
+
+% Use the minted library for typesetting code listings
+\tcbuselibrary{minted}
+
+% Document color scheme
+\definecolor{doc-note-color}{HTML}{3CB8E6}
+\definecolor{doc-info-color}{HTML}{03364D}
+\definecolor{doc-theorem-color}{HTML}{6FA103}
+\definecolor{doc-warning-color}{HTML}{DBB20D}
+\definecolor{doc-critical-color}{HTML}{FC3932}
+\definecolor{doc-listing-color}{HTML}{78FF78}
+
+% This packages provides new environment for the following 
+% common admonition?callout blocks:
+% - note
+\newtcolorbox{-doc-note}{breakable, colframe=doc-note-color, title=Note, before title={\faPencil\quad}, enlarge top by = \parskip, enlarge bottom by = \parskip}
+
+% - information
+\newtcolorbox{-doc-info}{colframe=doc-info-color, title=Information, before title={\faInfoCircle\quad}, enlarge top by = \parskip, enlarge bottom by = \parskip}
+
+% - theorem and corollary
+\newcounter{doctheoremcount}[chapter]
+\counterwithin{doctheoremcount}{chapter}
+
+\newtcbtheorem[use counter*=doctheoremcount]{-doc-theorem}{Theorem}{colframe=doc-theorem-color, oversize, coltitle=white, fonttitle=\bfseries, enlarge top by = \parskip, enlarge bottom by = \parskip}{th}
+\newtheorem{-doc-corollary}{Corollary}[doctheoremcount]
+
+% - property
+\newtheorem{-doc-property}{Property}[chapter]
+
+% - definition 
+\newtheorem{-doc-definition}{Definition}[chapter]
+
+% - warning
+\newtcolorbox{-doc-warning}{colframe=doc-warning-color, title=Warning, before title={\faWarning\quad}, enlarge top by = \parskip, enlarge bottom by = \parskip}
+
+% - critical information
+\newtcolorbox{-doc-critical}{colframe=doc-critical-color, title=Critical, before title={\faExclamation\quad}, enlarge top by = \parskip, enlarge bottom by = \parskip}
+
+\newtcblisting[auto counter,number within=section]{-doc-listing}[3]{colframe=doc-listing-color, coltitle=black, before title={\faCode\quad}, label={lst:#2},title={#1}, minted language={#3}, listing only, enlarge top by = \parskip, enlarge bottom by = \parskip}
+\endinput

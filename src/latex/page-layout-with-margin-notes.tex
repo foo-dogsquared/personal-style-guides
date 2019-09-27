@@ -1,0 +1,43 @@
+\documentclass[14pt, oneside]{memoir}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+\usepackage{layout}
+\usepackage{calc}
+
+% this is used by LuaLaTeX
+\usepackage{luatextra}
+\usepackage{luacolor}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+
+% setting up the fonts for fontspec
+\usepackage{unicode-math}
+\setmainfont{Source Serif Pro}
+\setsansfont{Source Sans Pro}
+\setmathfont{Latin Modern Math}[Scale=1.2]
+\setmonofont{Fira Code}
+
+% In case you want to use margin notes 
+\usepackage[left=1.15in, right=1.15in, marginparsep=20pt, marginparwidth=1.5in]{geometry}
+\setlength{\textwidth}{\textwidth - \marginparwidth}
+
+\usepackage{lipsum}
+
+\chapterstyle{bianchi}
+
+% set chapter spacing for easier reading on digital screen
+\setlength{\beforechapskip}{-\beforechapskip}
+
+% set the spacing for the page layout
+\setlength{\footskip}{3em}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\layout
+
+\end{document}

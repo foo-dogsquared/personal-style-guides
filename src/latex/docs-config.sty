@@ -1,0 +1,91 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{docs-config}[2019-07-29]
+
+% all of the packages to be used
+\RequirePackage[nocomments]{standalone}
+\RequirePackage{chngcntr}
+\RequirePackage{import}
+\RequirePackage[left=1.15in, right=1.15in, nomarginpar]{geometry}
+
+% Not needed if it's compiled in LuaLaTeX
+% \RequirePackage[utf8]{inputenc}
+
+% Not needed if it's compiled in LuaLaTeX
+% \RequirePackage[english]{babel}
+
+% Babel alternative for XeLaTeX and LuaLaTeX
+\RequirePackage{polyglossia}
+
+\RequirePackage[intlimits]{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{tikz}
+\RequirePackage{pgfplots}
+\RequirePackage{fancyhdr}
+\RequirePackage[newfloat]{minted}
+\RequirePackage{caption}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{xurl}
+\RequirePackage[colorlinks=true, linkcolor=., anchorcolor=red, urlcolor=blue, menucolor=., unicode=true]{hyperref}
+
+% this is used by LuaLaTeX
+\RequirePackage{luatextra}
+\RequirePackage{luacolor}
+\RequirePackage{fontspec}
+\RequirePackage{fontawesome}
+
+\usepgfplotslibrary{fillbetween}
+
+% setting up the fonts for fontspec
+\usepackage{unicode-math}
+\setmainfont{Source Serif Pro}
+\setsansfont{Source Sans Pro}
+\setmathfont{Latin Modern Math}[Scale=1.2]
+\setmonofont{Fira Code}
+
+% this one doesn't have a dependency and it is needed for the subfiles to
+% compile consistently in various situations
+% this also provides the \if macro for \rootdocument
+\RequirePackage{docs-ifrootdocument}
+
+% using my own packages
+\RequirePackage{docs-admonition-blocks}
+\RequirePackage{docs-title-page}
+
+% using the fancy header package
+% http://linorg.usp.br/CTAN/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+\pagestyle{fancy}
+
+% fill the header with the format
+\fancyhead[L]{\doctitle}
+\fancyhead[R]{\nouppercase{\rightmark}}
+
+% fill the footer with the format
+\fancyfoot[C]{\nouppercase{\leftmark}}
+\fancyfoot[R]{\thepage}
+
+% set the width of the horizontal bars in the header
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+% set the paragraph formatting
+\renewcommand{\baselinestretch}{1.35} 
+
+% set chapter style
+\chapterstyle{bianchi}
+
+\theoremstyle{definition}
+
+% set chapter spacing for easier reading on digital screen
+\setlength{\beforechapskip}{-\beforechapskip}
+
+% set the spacing for the page layout
+\setlength{\footskip}{3em}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0pt}
+
+% create a new environment for non-floating code listings
+\newenvironment{code}{\captionsetup{type=listing}}{}
+\SetupFloatingEnvironment{listing}{name=Source Code}
+
+\endinput
