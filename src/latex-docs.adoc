@@ -97,7 +97,7 @@ It's also useful for knowing the related terminologies used here.
 Margin notes are not present since I'm writing it as my notes, after all. 
 You can either use admonition blocks (inspired from https://asciidoctor.org/docs/user-manual/#admonition[Asciidoctor admonitions]) or create a page layout that includes it. 
 
-If you decide to use admonition blocks, I've already created link:./latex/docs-admonition-blocks.sty[a custom package] for it. 
+If you decide to use admonition blocks, I've already created https://github.com/foo-dogsquared/latex-templates/blob/master/styles/docs-admonition-blocks.sty[a custom package] for it. 
 It mainly uses https://ctan.org/pkg/fontawesome5[fontawesome5], https://ctan.org/pkg/tcolorbox[tcolorbox], and https://www.ctan.org/pkg/chngcntr[chngcntr]. 
 You may modify it as you like. 
 
@@ -180,7 +180,7 @@ Also include the date in https://www.iso.org/iso-8601-date-and-time-format.html[
 Don't forget to update the version if you modify the package. 
 This enables easy referencing for your packages. 
 
-For an example, you can see link:./latex/docs-admonition-blocks.sty[a admonition blocks custom package] to know how it's done. 
+For an example, you can see https://github.com/foo-dogsquared/latex-templates/blob/master/styles/docs-admonition-blocks.sty[a admonition blocks custom package] to know how it's done. 
 
 
 
@@ -211,7 +211,7 @@ This makes updating the styles easy and making the preamble to take less space.
 \end{document}
 ----
 
-You can see link:./latex/docs-config.sty[an example of the main style]. 
+You can see https://github.com/foo-dogsquared/latex-templates/blob/master/styles/docs-config.sty[an example of the main style]. 
 It should be the current preferences for the usual documents. 
 
 
@@ -223,7 +223,7 @@ In case your LaTeX documents needs to be modular, use https://ctan.org/pkg/stand
 
 Take note that https://tex.stackexchange.com/q/356278[the package does not detect whether a document is the root or not] since it is not designed this way. 
 In order to make it possible, I've created a little package https://tex.stackexchange.com/a/356466[based on the answer on the previously linked Stack Exchange thread]. 
-You can find it at link:./latex/docs-ifrootdocument.sty[my LaTeX templates]. 
+You can find it at https://github.com/foo-dogsquared/latex-templates/blob/master/styles/docs-ifrootdocument.sty[my LaTeX templates]. 
 
 With the custom package, you can now conditionally render a part of the LaTeX document if the document is compiled as the root or as an imported document. 
 
