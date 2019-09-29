@@ -26,7 +26,7 @@ Keep the length of the file name up to 256 characters.
 If you compile the documents normally and being used in the content, the process would fail because of the style files located in another folder. 
 This is where tools like http://personal.psu.edu/jcc8//software/latexmk-jcc/[Latexmk] would be handy. 
 You can configure Latexmk to add the path of the styles into the LaTeX package search path. 
-Please see the LaTeX toolchain section for more information. 
+Please see the <<LaTeX toolchain>> section for more information. 
 
 
 

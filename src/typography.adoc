@@ -25,16 +25,17 @@ The base font size should be at least 16px or higher.
 
 The following specifications for the headers can be bent in case it's not suitable. 
 
-Document title should be at least 150% larger than the base font size. 
-Main headers (`<h2>` or any equivalent) should be at least twice as large (100%) as the base font size. 
-Subheaders (`<h3>` or any equivalent) should be at least 75% larger than the base size. 
+* Document title should be at least 150% larger than the base font size. 
+* Main headers (`<h2>` or any equivalent) should be at least twice as large (100%) as the base font size. 
+* Subheaders (`<h3>` or any equivalent) should be at least 75% larger than the base size. 
 
 If you need any headers lower than the subheaders then you may do as you wish. 
 Here's the base specifications for them. 
 From this point, judgement is best used here and can be easily different from what the general style guide describes. 
-Section titles (`<h4>` or any equivalent) should be at least 50% larger. 
-Subsection titles (`<h5>` or any equivalent) should be at least 25% larger. 
-The least significant header (`<h6>` or any equivalent) should be at least 10% larger. 
+
+* Section titles (`<h4>` or any equivalent) should be at least 50% larger. 
+* Subsection titles (`<h5>` or any equivalent) should be at least 25% larger. 
+* The least significant header (`<h6>` or any equivalent) should be at least 10% larger. 
 
 
 

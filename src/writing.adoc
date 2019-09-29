@@ -60,6 +60,15 @@ For easy reference, there's a following list of parts of a document that should 
 * The parts and chapters, if it's a book. 
 * The sections and its subsections. 
 
+A document may also have additional sections. 
+However, the section should appear if it is necessary and satisfies their related condition(s). 
+
+* The abstract, if it tackles a technical concept. 
+* The bibliography, if it contains many references to works. 
+* The appendix, if the document is too extensive. 
+* Glossaries, if the document is too technical. 
+* The conclusion, if it's an article and the like. 
+
 
 
 
@@ -87,12 +96,26 @@ It will also make it easier to read and maintain the document.
 * Ensure sentences are written https://www.grammarly.com/blog/parallelism/[in parallel]. 
 * Avert using double negatives (e.g. "not unusual" and "no different"). 
 Phrases such as "not less than" are still accepted if it's used mathematically. 
+* Avoid using contractions (e.g. "do not" instead of "don't", "shall not" instead of "shan't"). 
 * For introducing abbreviations, write out the full name first then the abbreviation in parenthesis. 
 Then you can now use the abbreviated form after. 
 * Restrict the number of sentences in each paragraph to have a maximum of 10. 
 * Avoid using unit symbols (like `"` for inches) in writing. 
 * No emojis! >:-D 
 * Emoticons are accepted and should be used sparingly. 
+* Texting lingo such as IDK (I don't know), BRB (be right back), and LOL (laugh out loud) are heavily prohibited. 
+
+
+
+
+== Figurative language 
+
+* Most importantly, make sure your point works without the use of figures of speech. 
+* Use of hyperboles, understatements, similes, and cliché are discouraged. 
+* Use very minimal amount of colloqualisms and slang. 
+* Use minimal amount of metaphors and analogies. 
+* An argument/point can only have a metaphor or an analogy but not both. 
+* Don't build your whole (or even majority) of your point around metaphors and analogies. If you did, reconsider your argument. 
 
 
 
