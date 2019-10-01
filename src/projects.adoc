@@ -5,6 +5,8 @@ Gabriel Arazas <foo.dogsquared@gmail.com>
 
 It describes is my general projects style guide that tackles from its structure to its purpose. 
 This can make the process of project organization (for pet projects, that is) smoother. 
+Of course, this only refers to my digital projects. 
+Guidelines for physical projects may be derived from this one. 
 
 Chances that the conditional scenarios (i.e. the project became advanced enough) may never happen but it's good to have a plan than nothing. 
 
@@ -145,3 +147,34 @@ If by any circumstances the project will feature a document for special purposes
 Create the appropriate folder with the prefix `special-` in the documentations. 
 
 For example, if you want to feature a book made from https://www.latex-project.org/[LaTeX] documents, then make a folder named `special-book` and place the LaTeX source files there. 
+
+
+
+
+== Using a version control system 
+
+Using a version control system (VCS) for the project is a recommended practice. 
+For this purpose, a distributed VCS is preferred and https://git-scm.com/[Git] is the de-facto tool for it. 
+
+Integration with online services such as https://github.com/[GitHub] is also recommended for online collaboration and easy sharing of your project. 
+
+
+
+
+== Versioning your project
+
+With a version control system, versioning the project is also a recommended practice. 
+
+For software projects, the https://semver.org/spec/v2.0.0.html[Semantic Versioning v2 spec] is the go-to standard. 
+
+For other types of projects, it needs some extensive discussion whether the project should be versioned or not. 
+If the project is viable for versioning, here is a base guideline for it. 
+
+* Versioning is lifted to the Semantic Versioning v2 spec. 
+* Since it is lifted from the same spec, the version is made up of three numbers: the major, minor, and patch. 
+Additional labels such as beta or alpha state may be added with a hyphen (`-`). 
+* Projects can start at v0.MINOR.PATCH version scheme if it's meant to be developed continually. 
+* When the project is complete at its core (e.g. all of the intended chapters are written), it will start at v1 major version. 
+* If the project has gone through a redoing for the majority of the whole base, then it's viable for its major version to be incremented. 
+* If the release has a project feature has been added (e.g. additional chapter), then it's viable for its minor version to be incremented. 
+* If the release is composed only of fixes (e.g. spelling and grammatical fixes), then the patch version shall be up by one. 
