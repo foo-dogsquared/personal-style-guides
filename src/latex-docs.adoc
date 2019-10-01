@@ -245,7 +245,17 @@ With the custom package, you can now conditionally render a part of the LaTeX do
 The package is mostly used for two things: 
 
 * Compiling LaTeX standalone documents with their own content such as the preface, table of content, bibliography, and many others. 
-* Easy combining of LaTeX documents under one master book or something. 
+* Easy combining of LaTeX documents under one master book and the like. 
+
+
+
+
+== Using packages
+
+* Use minimal amount of packages as much as possible. 
+* The hard cap of the total imported third-party packages is set at 30 packages (not including LuaTeX packages, https://www.ctan.org/pkg/fontspec[fontspec], https://www.ctan.org/pkg/babel[babel], and https://www.ctan.org/pkg/polyglossia[polyglossia]). 
+* Common packages between modular documents should be handled in a style file. 
+* Like how most of the LaTeX users would say, the https://ctan.org/pkg/hyperref[hyperref] package should be the last third-party package to be loaded to prevent package clashes. 
 
 
 
@@ -360,3 +370,24 @@ Here's a table of the common prefixes with the label and cross-references format
 | `Theorem \ref{theorem{label-prefix-indicator}White hole theorem}`
 
 |===
+
+
+
+
+== Mathematics 
+
+* Use the https://www.ctan.org/pkg/amslatex[AMS LaTeX package]. 
+Specifically, use the https://www.ctan.org/pkg/amsmath[`amsmath`], `amssymb`, and `amsthm` package. 
+* Also, it is recommended to use https://ctan.org/pkg/mathtools[mathtools] CTAN package as well. 
+* Use the `math` prefix for the labels (e.g. `math{label-prefix-indicator}Maxwell's Equations`). 
+* For display mode equations, it is preferred to wrap it under the `equation` environment. 
+* For aligning equations, it is preferred to use the `align` environment. 
+If either side is absent, it is recommended to align the equations in the raw source. 
+* For setting a group of equations under one label, the `gathered` environment is preferred. 
+footnote:not_a_math_env[The given environment is not a math environment. You still have to create the appropriate math environments for typesetting the equation.] 
+* For subnumbering of equations, use the `subequations` environment. 
+footnote:not_a_math_env[]
+* For typesetting piecewise functions inline, use the `cases` environment. 
+* For typesetting piecewise functions in display mode, use `dcases` from the `mathtools` package. 
+You can also use the toggled version (`dcases*`) for disabling perpetual math mode when writing the conditions. 
+The toggled version is the preferred way. 

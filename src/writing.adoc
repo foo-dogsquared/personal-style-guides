@@ -7,6 +7,7 @@ Here's my general style guide for writing for future references.
 As such, this is updated periodically. 
 
 Most of the rules set here are the result of me being lazy and avoiding future migraines. 
+It also focuses on future-proofing your content. 
 
 This aims to save time on searching, archiving, and editing your document. 
 It also enforces consistency with the target persona. 
@@ -85,6 +86,8 @@ It will also make it easier to read and maintain the document.
 * There should be a newline before the end of the document. 
 * Once a list item contains sublists, the entire list should be spaced out. 
 
+A particular rule may be nullified if the raw source spacing with the rule applied does affect the output. 
+
 
 
 
@@ -100,7 +103,7 @@ Phrases such as "not less than" are still accepted if it's used mathematically.
 * For introducing abbreviations, write out the full name first then the abbreviation in parenthesis. 
 Then you can now use the abbreviated form after. 
 * Restrict the number of sentences in each paragraph to have a maximum of 10. 
-* Avoid using unit symbols (like `"` for inches) in writing. 
+* Avoid using unit symbols (e.g. `"` for inches, `°` for degrees) in writing. 
 * No emojis! >:-D 
 * Emoticons are accepted and should be used sparingly. 
 * Texting lingo such as IDK (I don't know), BRB (be right back), and LOL (laugh out loud) are heavily prohibited. 
@@ -110,8 +113,8 @@ Then you can now use the abbreviated form after.
 
 == Figurative language 
 
-* Most importantly, make sure your point works without the use of figures of speech. 
-* Use of hyperboles, understatements, similes, and cliché are discouraged. 
+* Most importantly, make sure your point works without the use of figurative language. 
+* Use of hyperboles, understatements, similes, and clichés are discouraged. 
 * Use very minimal amount of colloqualisms and slang. 
 * Use minimal amount of metaphors and analogies. 
 * An argument/point can only have a metaphor or an analogy but not both. 
@@ -132,14 +135,26 @@ Then you can now use the abbreviated form after.
 
 == Numbers 
 
-* Spell out the numbers 1 to 10. 
+* Spell out the numbers 0 to 9. 
 If you have multiple numbers in the same sentence, you can use the figures instead. 
+* As a consequence of the above rule, negative numbers should always be rendered in figures (e.g. -1 instead of negative one). 
 * Use appropriate units for the numbers. 
 * The same applies for ordinal numbers. 
 Spell out 1st to 10th unless you have multiple ordinals. 
 * Don't use superscript for ordinal numbers. 
-* Strictly write with 24-hour clock (i.e. 10:23, 22:41). 
+
+
+
+
+== Date and time 
+
+* Strictly write with 24-hour clock format (e.g. 10:23, 22:41) for the time. 
+* In ranking of importance, the year has the highest priority. 
+In other words, any date or datetime strings can be trimmed down to only its year and it still gives a context to it. 
+* As a consequence of the previous rule, a year should be present at all times (e.g. "July 2015" instead of "July"). 
 * Use https://www.iso.org/iso-8601-date-and-time-format.html[ISO 8601] to refer to dates and datetime. 
+* Avoid using relative dates (e.g. as of this writing, two weeks ago). 
+Instead, be explicit (e.g. as of 2019-10-01, starting from 2019-09-16). 
 
 
 
