@@ -97,16 +97,63 @@ A particular rule may be nullified if the raw source spacing with the rule appli
 * Write in informal tone. 
 * Write the content in present tense. 
 * Ensure sentences are written https://www.grammarly.com/blog/parallelism/[in parallel]. 
-* Avert using double negatives (e.g. "not unusual" and "no different"). 
+* Avert using double negatives (e.g., "not unusual" and "no different"). 
 Phrases such as "not less than" are still accepted if it's used mathematically. 
-* Avoid using contractions (e.g. "do not" instead of "don't", "shall not" instead of "shan't"). 
+* Avoid using contractions (e.g., "do not" instead of "don't", "shall not" instead of "shan't"). 
 * For introducing abbreviations, write out the full name first then the abbreviation in parenthesis. 
 Then you can now use the abbreviated form after. 
 * Restrict the number of sentences in each paragraph to have a maximum of 10. 
-* Avoid using unit symbols (e.g. `"` for inches, `°` for degrees) in writing. 
+* Avoid using unit symbols (e.g., `"` for inches, `°` for degrees) in writing. 
 * No emojis! >:-D 
 * Emoticons are accepted and should be used sparingly. 
 * Texting lingo such as IDK (I don't know), BRB (be right back), and LOL (laugh out loud) are heavily prohibited. 
+* Use the Latin words "i.e." (that is) and "e.g." (for example) for parenthetical materials. 
+Otherwise, use the language equivalent. 
+Also add a comma at the end. 
+
+
+
+== Common words 
+
+I take note that I usually use certain words a lot. 
+To make the writing not monotonous and spice things up a bit, consecutive use of those words are discouraged. 
+
+Just for the sake of quick reference, there is a table of common words with their synonyms. 
+
+[cols="4*",options="header"]
+|===
+| Common word(s) 
+| Type 
+| Suggested words 
+| Note
+
+| usually, commonly 
+| adverb
+| normally, frequently, consistently, generally, regularly, routinely 
+| 
+
+| variations, variants 
+| noun
+| versions, branches, alternatives
+|
+
+| quick 
+| adjective
+| fast, agile, rapid, swift, immediate 
+| 
+
+| common 
+| adjective 
+| typical, universal, ubiquitous, usual, everyday 
+| 
+
+| run
+| verb 
+| invoke, call 
+| This is used to mean running a command (e.g., from the shell) or invoking a function (e.g., from source code). 
+Pedantic meaning of each term is not considered yet. 
+
+|===
 
 
 
@@ -128,7 +175,7 @@ Then you can now use the abbreviated form after.
 * Use boldface only for emphasizing. 
 * Use italics for referring to a title of a work such as the title of an article, book, audio, or video. 
 * Avoid using underlines, strikethroughs, and all caps. 
-* Typeblock elements (e.g. paragraphs, images, and equations) should be spaced out in the raw source. 
+* Typeblock elements (e.g., paragraphs, images, and equations) should be spaced out in the raw source. 
 
 
 
@@ -137,7 +184,7 @@ Then you can now use the abbreviated form after.
 
 * Spell out the numbers 0 to 9. 
 If you have multiple numbers in the same sentence, you can use the figures instead. 
-* As a consequence of the above rule, negative numbers should always be rendered in figures (e.g. -1 instead of negative one). 
+* As a consequence of the above rule, negative numbers should always be rendered in figures (e.g., -1 instead of negative one). 
 * Use appropriate units for the numbers. 
 * The same applies for ordinal numbers. 
 Spell out 1st to 10th unless you have multiple ordinals. 
@@ -148,13 +195,13 @@ Spell out 1st to 10th unless you have multiple ordinals.
 
 == Date and time 
 
-* Strictly write with 24-hour clock format (e.g. 10:23, 22:41) for the time. 
+* Strictly write with 24-hour clock format (e.g., 10:23, 22:41) for the time. 
 * In ranking of importance, the year has the highest priority. 
 In other words, any date or datetime strings can be trimmed down to only its year and it still gives a context to it. 
-* As a consequence of the previous rule, a year should be present at all times (e.g. "July 2015" instead of "July"). 
+* As a consequence of the previous rule, a year should be present at all times (e.g., "July 2015" instead of "July"). 
 * Use https://www.iso.org/iso-8601-date-and-time-format.html[ISO 8601] to refer to dates and datetime. 
-* Avoid using relative dates (e.g. as of this writing, two weeks ago). 
-Instead, be explicit (e.g. as of 2019-10-01, starting from 2019-09-16). 
+* Avoid using relative dates (e.g., as of this writing, two weeks ago). 
+Instead, be explicit (e.g., as of 2019-10-01, starting from 2019-09-16). 
 
 
 
