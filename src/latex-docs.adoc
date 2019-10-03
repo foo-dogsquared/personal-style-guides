@@ -117,7 +117,7 @@ There are specific details for LaTeX documents, though.
 
 * Paper sizes are based from https://www.iso.org/standard/36631.html[ISO 216 standard]. 
 footnote:[https://www.cl.cam.ac.uk/~mgk25/iso-paper.html[Visit this page for more details.]]
-* Usual document size of choice includes A4 (210mm by 297mm) and above (i.e. A3, A2, A1). 
+* Usual document size of choice includes A4 (210mm by 297mm) and above (i.e., A3, A2, A1). 
 * Margins on all sides of the document has a minimum length of 1.15 inches. 
 * Chapter style is based from Bianchi style (chapter number on top with the title surrounded by horizontal rules). 
 * The page footer is located `3em` of space after the content. 
@@ -270,7 +270,7 @@ This is also the recommended practice by most of the community as some of the pa
 
 Here are some guidelines for the labelling: 
 
-* Separate the prefix and the label name with `{label-prefix-indicator}` (e.g. `label{label-prefix-indicator}Name of the label`). 
+* Separate the prefix and the label name with `{label-prefix-indicator}` (e.g., `label{label-prefix-indicator}Name of the label`). 
 * The label name should be in sentence case to easily write and remember the label. 
 * Use the common prefixes listed below. 
 * When making a cross-reference with `\ref` command, prepend the label with a preferred word listed in the following table. 
@@ -379,7 +379,7 @@ Here's a table of the common prefixes with the label and cross-references format
 * Use the https://www.ctan.org/pkg/amslatex[AMS LaTeX package]. 
 Specifically, use the https://www.ctan.org/pkg/amsmath[`amsmath`], `amssymb`, and `amsthm` package. 
 * Also, it is recommended to use https://ctan.org/pkg/mathtools[mathtools] CTAN package as well. 
-* Use the `math` prefix for the labels (e.g. `math{label-prefix-indicator}Maxwell's Equations`). 
+* Use the `math` prefix for the labels (e.g., `math{label-prefix-indicator}Maxwell's Equations`). 
 * For display mode equations, it is preferred to wrap it under the `equation` environment. 
 * For aligning equations, it is preferred to use the `align` environment. 
 If either side is absent, it is recommended to align the equations in the raw source. 

@@ -8,7 +8,7 @@ This can make the process of project organization (for pet projects, that is) sm
 Of course, this only refers to my digital projects. 
 Guidelines for physical projects may be derived from this one. 
 
-Chances that the conditional scenarios (i.e. the project became advanced enough) may never happen but it's good to have a plan than nothing. 
+Chances that the conditional scenarios (i.e., the project became advanced enough) may never happen but it's good to have a plan than nothing. 
 
 
 
@@ -123,7 +123,7 @@ This is mostly included in the README and the manual but it is appreciated to ha
 
 == The documentation folder 
 
-The documentation folder (usually named `docs/`) contains the assets (e.g. images, videos) and other documents. 
+The documentation folder (usually named `docs/`) contains the assets (e.g., images, videos) and other documents. 
 This is also where the more detailed documents are stored. 
 
 This should be present if the project is getting more complex or is in need of more documentation that the manual cannot hold much anymore. 
@@ -174,7 +174,7 @@ If the project is viable for versioning, here is a base guideline for it.
 * Since it is lifted from the same spec, the version is made up of three numbers: the major, minor, and patch. 
 Additional labels such as beta or alpha state may be added with a hyphen (`-`). 
 * Projects can start at v0.MINOR.PATCH version scheme if it's meant to be developed continually. 
-* When the project is complete at its core (e.g. all of the intended chapters are written), it will start at v1 major version. 
+* When the project is complete at its core (e.g., all of the intended chapters are written), it will start at v1 major version. 
 * If the project has gone through a redoing for the majority of the whole base, then it's viable for its major version to be incremented. 
-* If the release has a project feature has been added (e.g. additional chapter), then it's viable for its minor version to be incremented. 
-* If the release is composed only of fixes (e.g. spelling and grammatical fixes), then the patch version shall be up by one. 
+* If the release has a project feature has been added (e.g., additional chapter), then it's viable for its minor version to be incremented. 
+* If the release is composed only of fixes (e.g., spelling and grammatical fixes), then the patch version shall be up by one. 

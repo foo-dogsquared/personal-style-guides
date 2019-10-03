@@ -59,7 +59,7 @@ Last but not least, examples of a great (free) monospace font are https://github
 
 If you need a font with mathematical typesetting, have a look in my math font selection which includes http://www.gust.org.pl/projects/e-foundry/lm-math[Latin Modern Math], https://github.com/stipub/stixfonts[STIX], https://github.com/alif-type/xits[XITS] (based from the STIX font), and https://www.ctan.org/tex-archive/fonts/Asana-Math/[Asana Math]. 
 
-For fonts with wide international support (i.e. Chinese, Japanese, Korean, Arabian), you can mainly look for https://www.google.com/get/noto/[Noto family], https://www.gnu.org/software/freefont/[GNU FreeFont], and https://github.com/IBM/plex[Plex].
+For fonts with wide international support (i.e., Chinese, Japanese, Korean, Arabian), you can mainly look for https://www.google.com/get/noto/[Noto family], https://www.gnu.org/software/freefont/[GNU FreeFont], and https://github.com/IBM/plex[Plex].
 
 
 
