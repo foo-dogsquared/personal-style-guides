@@ -3,6 +3,17 @@ Gabriel Arazas <foo.dogsquared@gmail.com>
 2019-09-23
 :toc:
 
+:bibliography_header_name: Bibliography
+:bibliography_header_name_alt: Citations
+
+:appendix_header_name: Appendix
+:appendix_header_name_alt: Further looking
+
+:appendix_background_reading_header_name: Background reading
+:appendix_background_reading_header_name_alt: Starter points
+:appendix_background_reading_header_name_alt2: Supplemental materials
+
+
 Here's my general style guide for writing for future references. 
 As such, this is updated periodically. 
 
@@ -60,6 +71,7 @@ For easy reference, there's a following list of parts of a document that should 
 * The document title. 
 * The parts and chapters, if it's a book. 
 * The sections and its subsections. 
+* A dedicated section for listing resources used to refer on writing. 
 
 A document may also have additional sections. 
 However, the section should appear if it is necessary and satisfies their related condition(s). 
@@ -110,6 +122,9 @@ Then you can now use the abbreviated form after.
 * Use the Latin words "i.e." (that is) and "e.g." (for example) for parenthetical materials. 
 Otherwise, use the language equivalent. 
 Also add a comma at the end. 
+* Use formal inclusive terms such as "everyone", "all", and "community". 
+That said, informal inclusive terms are lightly discouraged. 
+
 
 
 
@@ -215,6 +230,54 @@ Otherwise, start with each list item as if it's another paragraph.
 * Use https://www.grammarly.com/blog/what-is-the-oxford-comma-and-why-do-people-care-so-much-about-it/[serial commas]. 
 * Once a list item contains sublists, the entire list should be spaced out in raw source. 
 * Avoid using nested lists two levels deep. 
+
+
+
+
+== Appendix 
+
+The appendix is a section dedicated for additional and supplemental information that is not suitable to be included in the main text. 
+footnote:[Look up https://practicaltypography.com/[Matthew Butterick's _Practical Typography_ book] as an example for appendix.] 
+
+It could be a group of sections listed with letters as counters. 
+
+The name of the header should be "{appendix_header_name}". 
+For an alternative, it can be named as "{appendix_header_name_alt}". 
+The alternative name is also used for documents with casual tone. 
+
+Most importantly, it is not the place for putting all of the research resources. 
+The bibliography section already takes care of that. 
+
+
+
+
+== Resource listing 
+
+As much as self-explanatory this is, a resource listing is a section dedicated for listing the resources. 
+
+There are mainly two types of resource listing: bibliography and related resources. 
+
+Generally, a resource listing section is found at the end of the document (or the backmatter) with their own section/chapter. 
+This is for the convenience of the reader (including you). 
+
+
+=== Bibliography
+
+The bibliography is a section listing the resources cited in the document. 
+
+The name of the header should be "{bibliography_header_name}". 
+For an alternative, it may also be named as "{bibliography_header_name_alt}". 
+
+
+=== Related resources
+
+The related resources section is self-explanatory. 
+It lists the related resources that the reader may want to look in their own time. 
+It is located as a part of the appendix. 
+
+One of the main (personal) purpose of including this section is to enable easier research on the required starting background reading. 
+The header should be named as "{appendix_background_reading_header_name}". 
+For casual writings, it can be named as "{appendix_background_reading_header_name_alt}" or "{appendix_background_reading_header_name_alt2}". 
 
 
 
