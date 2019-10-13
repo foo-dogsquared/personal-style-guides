@@ -12,7 +12,7 @@ dist: bionic
 # - fc-cache -f -v
 
 install:
-  - source ./texlive/texlive_install.sh
+  - source ./texlive/texlive-install.sh
 
 cache:
   directories:
