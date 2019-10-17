@@ -195,6 +195,37 @@ Pedantic meaning of each term is not considered yet.
 
 
 
+== Dashes and hyphens 
+
+There are a lot of guides for using em dashes (`—`), en dashes (`–`), and hyphens (`-`). 
+For consistency, here are the personal use cases for each of them. 
+
+The main inspiration for this is from https://practicaltypography.com/hyphens-and-dashes.html[_Practical Typography_]. 
+
+
+=== Hyphens 
+
+* Use hyphens around phrasal adjectives — i.e., tougher-than-nails rock, over-the-top personality. 
+* A hyphen is used for avoiding ambiguity — i.e., first hand item versus first-hand item, high school vs high-school. 
+* Multipart words also use hyphens — i.e., bric-a-brac, wishy-washy, tête-à-tête, fuel-efficient. 
+* Word breaks around line wrapping. 
+Though, it is more preferred to let the program (i.e., HTML, LaTeX, or Microsoft Word) to handle it automatically. 
+
+
+=== En dashes 
+
+* An en dash is used for ranges — i.e., pages 21–34, lines 5–10. 
+* En dashes denote connections — i.e., north⁠–⁠south highway, Phillippines–South Korea alliance, Bender–Knuth involution. 
+
+
+=== Em dashes 
+
+* Em dashes are used for stronger pauses and breaks when a comma or a colon is not strong enough. 
+* It is also used for stronger parenthetical materials when parenthesis is not strong enough — i.e., "— i.e., Value, Virtue —" versus "(i.e., Value, Virtue)". 
+
+
+
+
 == Numbers 
 
 * Spell out the numbers 0 to 9. 
