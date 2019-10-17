@@ -1,0 +1,32 @@
+= Visual aids design style guide 
+Gabriel Arazas <foo.dogsquared@gmail.com>
+2019-10-17
+:toc:
+
+This is my personal style guide on creating visual aids for my documents. 
+
+References for my design include https://primer.style/[Primer design system] and https://material.io/design/[Material Design]. 
+
+
+
+
+== Target persona
+
+The general brand persona should ooze in light professionalism. 
+
+It is further backed by the fonts and typography. 
+
+For a general guideline of the target persona, you can refer to the corresponding brand style guide. 
+It should also tell about the fonts and formatting. 
+
+
+
+
+== General style 
+
+* Stroke thickness of the nodes should be at least 2px. 
+* It should use the main font (as described in the style guide). 
+* Font size should be at a minimum of 36px. 
+* Simple visual aids should be in SVG format. 
+* Use https://www.r-project.org/[R] (or https://www.gnu.org/software/octave/[Octave]) for generating mathematical pictures (e.g., plots, graphs). 
+* Content should be horizontally and vertically centered. 
