@@ -26,7 +26,6 @@ before_script:
   - tar -xf source-serif-pro.tar.gz 
   - tar -xf source-sans-pro.tar.gz
   - fc-cache -v adobe-fonts-source-*/
-  - cd $TRAVIS_BUILD_DIR/src/
 script:
   # Texliveonfly will download packages automatically
   - texliveonfly src/latex/page-layout.tex
@@ -48,6 +47,18 @@ script:
 #  - texliveonfly --arguments='-shell-escape' main.tex
 
 ## Uncomment the following lines to see the packages installed in travis
-#after_script:
-#  - export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
-#  - tlmgr list --only-installed | grep -oP 'i \K.+?(?=:)'
+after_script:
+  - export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
+  - tlmgr list --only-installed | grep -oP 'i \K.+?(?=:)'
+
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file: 
+    - page-layout.pdf
+    - page-layout-with-margin-notes.pdf
+  skip_cleanup: true
+  on:
+    tags: true
+
