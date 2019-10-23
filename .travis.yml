@@ -21,9 +21,11 @@ cache:
 
 # Change working directory so including files will work
 before_script: 
-  - sudo wget https://api.github.com/repos/adobe-fonts/source-serif-pro/tarball 
-  - sudo wget https://api.github.com/repos/adobe-fonts/source-sans-pro/tarball 
-  - tar -xfz adobe-fonts-*.tar.gz 
+  - sudo curl -L https://api.github.com/repos/adobe-fonts/source-serif-pro/tarball -o source-serif-pro.tar.gz 
+  - sudo curl -L https://api.github.com/repos/adobe-fonts/source-sans-pro/tarball -o source-sans-pro.tar.gz
+  - tar -xf source-serif-pro.tar.gz 
+  - tar -xf source-sans-pro.tar.gz
+  - fc-cache -v adobe-fonts-source-*/
   - cd $TRAVIS_BUILD_DIR/src/
 script:
   # Texliveonfly will download packages automatically
