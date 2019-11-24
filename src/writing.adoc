@@ -220,9 +220,10 @@ Though, it is more preferred to let the program (i.e., HTML, LaTeX, or Microsoft
 
 === Em dashes 
 
+Don't forget to add a space on each side. 
+
 * Em dashes are used for stronger pauses and breaks when a comma or a colon is not strong enough. 
 * It is also used for stronger parenthetical materials when parenthesis is not strong enough — i.e., "— i.e., Value, Virtue —" versus "(i.e., Value, Virtue)". 
-
 
 
 
@@ -322,3 +323,16 @@ If it's not possible, enclose them in quotation marks.
 * If you include the author, enclose them in quotation marks. 
 * If you want to cite a source similarly to academic writings, use the https://www.bibme.org/citation-guide/apa/[APA citation style]. 
 * For bibliography or reference list, use https://www.bibme.org/citation-guide/apa/[APA style] for citations. 
+
+
+
+
+== Footnotes 
+
+* Footnote markers should be placed after a sentence or a clause. 
+* It is also preferred to surround the footnote markers with a space. 
+* Generally, it is favored to make the footnote markers with numbers for easy referencing. 
+* If the footnote markers use numbers, the numbering system should have a global counter for the entire document. 
+In other words, it should continuously count footnote markings throughout the document and not affected by the usual number sectioning system whatsoever. 
+* Since footnotes on most systems (i.e., Asciidoctor, LaTeX) only allows footnote to contain inline content, make sure to fit the footnote content within a sentence or two. 
+More than two sentences can warrant considering to include it in the appendix or at least its own subsection. 
