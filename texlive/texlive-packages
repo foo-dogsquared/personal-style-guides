@@ -9,8 +9,11 @@ texliveonfly latexmk
 collection-langeuropean
 collection-fontsrecommended
 
+# Other packages 
+memoir 
+
 # LuaTeX
-luaotfload
+luatex luaotfload
 
 # texliveonfly does not detect the following packages automatically
 minted fvextra upquote lineno xstring framed caption
