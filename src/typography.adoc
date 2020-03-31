@@ -26,7 +26,9 @@ The base font size should be at least 16px or higher.
 The following specifications for the headers can be bent in case it's not suitable. 
 
 * Document title should be at least 150% larger than the base font size. 
+
 * Main headers (`<h2>` or any equivalent) should be at least twice as large (100%) as the base font size. 
+
 * Subheaders (`<h3>` or any equivalent) should be at least 75% larger than the base size. 
 
 If you need any headers lower than the subheaders then you may do as you wish. 
@@ -34,7 +36,9 @@ Here's the base specifications for them.
 From this point, judgement is best used here and can be easily different from what the general style guide describes. 
 
 * Section titles (`<h4>` or any equivalent) should be at least 50% larger. 
+
 * Subsection titles (`<h5>` or any equivalent) should be at least 25% larger. 
+
 * The least significant header (`<h6>` or any equivalent) should be at least 10% larger. 
 
 
@@ -139,7 +143,9 @@ However, there is a set of rules generally applied to all formats.
 This is commonly applied with https://www.latex-project.org/[LaTeX documents] and other book publication toolchains. 
 
 * If the book (or book-like) output includes headers, footers, and page numbers, align them with the content body. 
+
 * There should be margins that measures at least 1 inch on all sides. 
+
 * Make sure there is at least a title page, preface (if any), table of contents, and table of figures. 
 
 
@@ -148,11 +154,16 @@ This is commonly applied with https://www.latex-project.org/[LaTeX documents] an
 When you create your own website, it is best to give focus on the typography at first since "Content is king." as they say. 
 
 * Use https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries[media queries] to set breakpoints for mobile and desktop screens. 
+
 * Leave the default font size for the mobile screens and apply the base font size for tablet (or larger) screens. 
 If you didn't apply this, your site does have a large font but it's uncomfortable to read for mobile devices. 
+
 * Create two stylesheets: one for the base elements and the other for the site layout (with the classes applied, etc.). 
 In this way, you can easily inline the CSS style for your site and only wait for the layouts stylesheet to load. 
+
 * Use https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering[text rendering optimization], https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning[font kerning], and https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings[other font-related properties] you might find useful. 
+
+
 
 
 == Content formatting 
@@ -181,6 +192,7 @@ Speaking of URLs, any raw URLs should be formatted in monospace text.
 Here's the style guidelines for usual content formatting in the main body. 
 
 * Prerendered text (`<pre>` or any equivalent) should strictly render as monospace text and have a slightly different background (usually the greyed background color) to easily discern them especially if the main font is monospace. 
+
 * Highlighted text (`<mark>` or any equivalent) should strictly render with the main font and sports a different background (usually the foreground) with the color of the background to easily discern from the prerendered text. 
 
 
@@ -190,7 +202,9 @@ Basing on HTML tables, a table can be made up of a caption, a header, and the ta
 It should have 
 
 * Table headers should have the primary accent color as the background. 
+
 * Table captions should be at the bottom of the table. 
+
 * Tables should have zebra striping colors. 
 Preferrably, it should have the greyed background color for even rows. 
 
@@ -199,7 +213,9 @@ Preferrably, it should have the greyed background color for even rows.
 
 * For ordered lists, avoid using roman numerals and letters. 
 Only use numbers similarly to sectioning numbers for hierarchy. 
-* For unordered lists, 
+
+* For unordered lists, simple shapes is preferred. 
+
 * If the list is handled by the program (which it should be nowadays), set it accordingly. 
 For LaTeX documents, there's no need to since it is built for easy structuring of the book. 
 For HTML, use https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters[CSS counters]. 

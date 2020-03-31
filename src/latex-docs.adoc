@@ -167,6 +167,8 @@ It features Lua integration that opens up the TeX internals and it can be more p
 For starting with LuaLaTeX, you can start with the http://mirror.pregi.net/tex-archive/info/luatex/lualatex-doc/lualatex-doc.pdf[tour guide of LuaLaTeX]. 
 For more information on it, you can read the http://mirror.pregi.net/tex-archive/systems/doc/luatex/luatex.pdf[official reference guide]. 
 
+For bibliographies, using https://www.ctan.org/pkg/biblatex[BibLaTeX] is preferred. 
+
 
 
 
@@ -175,7 +177,7 @@ For more information on it, you can read the http://mirror.pregi.net/tex-archive
 Prefix your custom package and environment names with `doc` to prevent potential name conflicts. 
 
 In creating custom packages, be sure to name them exclusively in kebab case. 
-Also include the date in https://www.iso.org/iso-8601-date-and-time-format.html[ISO 8601 standard] as the version. 
+Also include the date in https://www.iso.org/iso-8601-date-and-time-format.html[ISO 8601 standard] with the version. 
 
 Don't forget to update the version if you modify the package. 
 This enables easy referencing for your packages. 

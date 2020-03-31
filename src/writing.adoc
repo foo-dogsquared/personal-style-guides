@@ -4,14 +4,13 @@ Gabriel Arazas <foo.dogsquared@gmail.com>
 :toc:
 
 :bibliography_header_name: Bibliography
-:bibliography_header_name_alt: Citations
+:bibliography_header_name_alt: Additional readings
 
 :appendix_header_name: Appendix
 :appendix_header_name_alt: Further looking
 
-:appendix_background_reading_header_name: Background reading
-:appendix_background_reading_header_name_alt: Starter points
-:appendix_background_reading_header_name_alt2: Supplemental materials
+:reference_list_header_name: References
+:reference_list_header_name_alt: Citations
 
 
 Here's my general style guide for writing for future references. 
@@ -32,8 +31,7 @@ This is mainly inspired from http://www.cs.uky.edu/~raphael/writing.html[_Hints 
 == Write one sentence per line 
 
 There are no character limits per line enforced but be practical with the limit. 
-The https://sembr.org/[Semantic Line Breaks] does not apply here since it is too fuzzy. 
-Instead, I'll make it one sentence for all types. 
+The https://sembr.org/[Semantic Line Breaks] can apply if you think the source code is getting tiring to read. 
 
 For clarification, sentences that are connected with a semicolon are considered two sentences. 
 They need to be in separated lines. 
@@ -50,13 +48,17 @@ Regarding the document itself, it should follow the set guidelines below.
 
 * The document title should be formatted in sentence case (only capitalize the first word). 
 Proper nouns should be capitalized correctly. 
+
 * A revision string should be present in all documents. 
 This could be the Git commit hash or the modified datestamp in https://www.iso.org/iso-8601-date-and-time-format.html[ISO 8601]. 
+
 * A list of authors. 
+
 * A list of contributors (if the document is open for contributions). 
-Since not all documents are applied with Git, the latter is preferred. 
-* All types of headers within the document are in sentence case. 
-* In case the document will use sectioning numbers, stay with using numbers to easily recognize the hierarchy. 
+
+* All types of headers within the document are in sentence case (only the first word is capitalized except for proper nouns). 
+
+* In case the document will use sectioning numbers, stay with using numbers to easily recognize the hierarchy (e.g., section 1.2.3 is easier to visualize instead of 1.2.C). 
 
 
 
@@ -92,11 +94,16 @@ Hence, there is a need to space out certain parts of a raw document.
 
 It will also make it easier to read and maintain the document. 
 
-* If possible, main title (`<h1>` or any equivalent) should be in the first line.
+* If possible, main title (`<h1>` or any equivalent) should be in the first line. 
+
 * Headers (`<h2>` or any equivalent) should be preceded by four newlines. 
+
 * All types of subheaders (`<h3>`, ..., `<h6>` or any equivalent) should be preceded by two newlines. 
+
 * There should be a newline before the end of the document. 
+
 * Once a list item contains sublists, the entire list should be spaced out. 
+The list could also be spaced if there's a list item with more than one sentence. 
 
 A particular rule may be nullified if the raw source spacing with the rule applied does affect the output. 
 
@@ -106,22 +113,35 @@ A particular rule may be nullified if the raw source spacing with the rule appli
 == General style
 
 * Use simple language even in a technical document. 
+
 * Write in informal tone. 
+
 * Write the content in present tense. 
+
 * Ensure sentences are written https://www.grammarly.com/blog/parallelism/[in parallel]. 
+
 * Avert using double negatives (e.g., "not unusual" and "no different"). 
 Phrases such as "not less than" are still accepted if it's used mathematically. 
+
 * Avoid using contractions (e.g., "do not" instead of "don't", "shall not" instead of "shan't"). 
+
 * For introducing abbreviations, write out the full name first then the abbreviation in parenthesis. 
 Then you can now use the abbreviated form after. 
+
 * Restrict the number of sentences in each paragraph to have a maximum of 10. 
+
 * Avoid using unit symbols (e.g., `"` for inches, `°` for degrees) in writing. 
+
 * No emojis! >:-D 
+
 * Emoticons are accepted and should be used sparingly. 
+
 * Texting lingo such as IDK (I don't know), BRB (be right back), and LOL (laugh out loud) are heavily prohibited. 
+
 * Use the Latin words "i.e." (that is) and "e.g." (for example) for parenthetical materials. 
 Otherwise, use the language equivalent. 
 Also add a comma at the end. 
+
 * Use formal inclusive terms such as "everyone", "all", and "community". 
 That said, informal inclusive terms are lightly discouraged. 
 
@@ -176,11 +196,17 @@ Pedantic meaning of each term is not considered yet.
 == Figurative language 
 
 * Most importantly, make sure your point works without the use of figurative language. 
+
 * Use of hyperboles, understatements, similes, and clichés are discouraged. 
+
 * Use very minimal amount of colloqualisms and slang. 
+
 * Use minimal amount of metaphors and analogies. 
+
 * An argument/point can only have a metaphor or an analogy but not both. 
-* Don't build your whole (or even majority) of your point around metaphors and analogies. If you did, reconsider your argument. 
+
+* Don't build your whole (or even majority) of your point around metaphors and analogies. 
+If you did, reconsider your argument. 
 
 
 
@@ -188,8 +214,11 @@ Pedantic meaning of each term is not considered yet.
 == Text formatting
 
 * Use boldface only for emphasizing. 
+
 * Use italics for referring to a title of a work such as the title of an article, book, audio, or video. 
+
 * Avoid using underlines, strikethroughs, and all caps. 
+
 * Typeblock elements (e.g., paragraphs, images, and equations) should be spaced out in the raw source. 
 
 
@@ -292,37 +321,56 @@ There are mainly two types of resource listing: bibliography and related resourc
 Generally, a resource listing section is found at the end of the document (or the backmatter) with their own section/chapter. 
 This is for the convenience of the reader (including you). 
 
+For formatting the citations, see the <<References>> section. 
+
 
 === Bibliography
 
-The bibliography is a section listing the resources cited in the document. 
+The bibliography is a section for citing all resources used for creating the document. 
+To get us in the same page (no pun intended), https://blog.apastyle.org/apastyle/2011/02/whats-a-reference-list-for.html[a blog post] (though it's not entirely about biblographies) clarified what is a bibliography can be. 
 
-The name of the header should be "{bibliography_header_name}". 
-For an alternative, it may also be named as "{bibliography_header_name_alt}". 
-
-
-=== Related resources
-
-The related resources section is self-explanatory. 
-It lists the related resources that the reader may want to look in their own time. 
-It is located as a part of the appendix. 
+Biblographies can expand into references that are not explicitly cited anywhere in the document. 
+Reference lists, however, does not make it as an option. 
 
 One of the main (personal) purpose of including this section is to enable easier research on the required starting background reading. 
-The header should be named as "{appendix_background_reading_header_name}". 
-For casual writings, it can be named as "{appendix_background_reading_header_name_alt}" or "{appendix_background_reading_header_name_alt2}". 
+
+The name of the header should be "{bibliography_header_name}". 
+For casual writings, it can be named as "{bibliography_header_name_alt}". 
+
+
+=== Reference list
+
+Based from the APA style guide, a reference list is a simply a list of citations used throughout the entire document. 
+As mentioned from https://blog.apastyle.org/apastyle/2011/02/whats-a-reference-list-for.html[a previously linked blog post], a reference list shows that a student have done their research. 
+
+Preferred header names include "{reference_list_header_name}" or "{reference_list_header_name_alt}". 
+
+NOTE: Both reference lists and bibliographies should not appear in the same document. 
+A suggested action would be listing all of the cited resources in the resource lists and revamp the bibliography section to be an appendix for additional resources instead. 
+footnote:[Or not, as said previously, bibliographies can be used for additional resources so it's a matter of context and familiarity for your readers.] 
 
 
 
 
 == References 
 
-* For referring to articles, books, videos, audio, and images, the title should be written exactly as they are. 
-If the title is stylized (written all uppercase or lowercase, for example), format it in sentence case. 
+* For referring to articles, books, videos, audio, and images, the title should be in sentence case (capitalize only the first word and proper nouns). 
+This also applies to subtitles. 
+
+* Any linked references should have a retrieval date present, similar to Wikipedia's way of referring to things. 
+The format of the date depends on the style guide. 
+In this case, it should be in https://www.iso.org/iso-8601-date-and-time-format.html[ISO format]. 
+This reduces some confusion especially if the hyperlink is vulnerable to https://en.wikipedia.org/wiki/Link_rot[link rots]. 
+
 * Titles should be italicized. 
 If it's not possible, enclose them in quotation marks. 
-* If you include the author, enclose them in quotation marks. 
+
+* If you include the author (e.g., the website, professionals, researchers), enclose them in quotation marks. 
+
 * If you want to cite a source similarly to academic writings, use the https://www.bibme.org/citation-guide/apa/[APA citation style]. 
+
 * For bibliography or reference list, use https://www.bibme.org/citation-guide/apa/[APA style] for citations. 
+This is already covered in the <<Resource listing>> section. 
 
 
 
@@ -330,9 +378,13 @@ If it's not possible, enclose them in quotation marks.
 == Footnotes 
 
 * Footnote markers should be placed after a sentence or a clause. 
+
 * It is also preferred to surround the footnote markers with a space. 
+
 * Generally, it is favored to make the footnote markers with numbers for easy referencing. 
+
 * If the footnote markers use numbers, the numbering system should have a global counter for the entire document. 
 In other words, it should continuously count footnote markings throughout the document and not affected by the usual number sectioning system whatsoever. 
+
 * Since footnotes on most systems (i.e., Asciidoctor, LaTeX) only allows footnote to contain inline content, make sure to fit the footnote content within a sentence or two. 
 More than two sentences can warrant considering to include it in the appendix or at least its own subsection. 
