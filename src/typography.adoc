@@ -135,7 +135,12 @@ There are various output formats so we'll divide further into each format.
 However, there is a set of rules generally applied to all formats. 
 
 * The optimal characters per line for the documents is 60 to 80. 
+
 * The content body should be centered on the document. 
+
+* Avoid using justified https://en.wikipedia.org/wiki/Typographic_alignment[text alignment] as much as possible and instead use a ragged-left (or flush-right) alignment. 
+Much more so when publishing for the web. 
+The justified text tends to create https://en.wikipedia.org/wiki/River_(typography)[rivers] and it can look cluttered. 
 
 
 === Book (or book-like) 

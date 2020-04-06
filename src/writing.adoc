@@ -1,6 +1,6 @@
 = Writing style guide
 Gabriel Arazas <foo.dogsquared@gmail.com>
-2019-09-23
+:revdate: 2020-03-31
 :toc:
 
 :bibliography_header_name: Bibliography
@@ -17,13 +17,19 @@ Here's my general style guide for writing for future references.
 As such, this is updated periodically. 
 
 Most of the rules set here are the result of me being lazy and avoiding future migraines. 
-It also focuses on future-proofing your content. 
 
-This aims to save time on searching, archiving, and editing your document. 
-It also enforces consistency with the target persona. 
+One of the primary goals of this style guide is to future-proofing your content while making it readable enough to share it with other readers. 
+Remember if you're making it better for your readers, it also makes it better for yourself. 
+This style guide also aims to save time on searching, archiving, and editing your document. 
 
-This writing style guide is based from multiple sources. 
-This is mainly inspired from http://www.cs.uky.edu/~raphael/writing.html[_Hints on writing style_], https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/[_A beginner’s guide to writing documentation_ from "Write the Docs"], https://docs.microsoft.com/en-us/style-guide/welcome/[_Microsoft Writing Style Guide_], and https://www.ox.ac.uk/sites/files/oxford/media_wysiwyg/University%20of%20Oxford%20Style%20Guide.pdf[_University of Oxford Style Guide_]. 
+This is mainly inspired from the following sources: 
+
+* http://www.cs.uky.edu/~raphael/writing.html[_Hints on writing style_] 
+* https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/[_A beginner’s guide to writing documentation_ from "Write the Docs"] 
+* https://docs.microsoft.com/en-us/style-guide/welcome/[_Microsoft Writing Style Guide_] 
+* https://www.ox.ac.uk/sites/files/oxford/media_wysiwyg/University%20of%20Oxford%20Style%20Guide.pdf[_University of Oxford Style Guide_]
+* https://wikipedia.org/[Wikipedia] 
+* https://apastyle.apa.org/[APA style guide] 
 
 
 
@@ -100,6 +106,9 @@ It will also make it easier to read and maintain the document.
 
 * All types of subheaders (`<h3>`, ..., `<h6>` or any equivalent) should be preceded by two newlines. 
 
+* There should be a space after each sentence. 
+Coupled with the one-sentence-per-line rule (with some semantic line breaks), this makes editing and creating paragraphs easier. 
+
 * There should be a newline before the end of the document. 
 
 * Once a list item contains sublists, the entire list should be spaced out. 
@@ -138,7 +147,7 @@ Then you can now use the abbreviated form after.
 
 * Texting lingo such as IDK (I don't know), BRB (be right back), and LOL (laugh out loud) are heavily prohibited. 
 
-* Use the Latin words "i.e." (that is) and "e.g." (for example) for parenthetical materials. 
+* Use the Latin words id est (**that is** in English, abbreviated as "i.e.") and "e.g." (**examples given** in English, abbreviated as "e.g.") for parenthetical materials. 
 Otherwise, use the language equivalent. 
 Also add a comma at the end. 
 
@@ -193,6 +202,23 @@ Pedantic meaning of each term is not considered yet.
 
 
 
+== Continuity 
+
+This refers to the flow of ideas and expressions throughout the document. 
+
+Following from the https://apastyle.apa.org/[APA style guide], you should make use of the following: 
+
+* Use punctuations properly to show the relationship of the ideas. 
+This also marks how your text should be read. 
+
+* Make use of transitional words for scenarios to show transition to time (e.g., 'then', 'after', 'since'), events (e.g., 'therefore', 'consequently', 'as a result'), and presentation of other (e.g., 'conversely', 'but', 'however') or additional ideas (e.g., 'additionally', 'and', 'similarly'). 
+
+* Be mindful with the correct verb tense for your ideas. 
+If done incorrectly, it can make your idea flow rough and throw off your readers a little. 
+
+
+
+
 == Figurative language 
 
 * Most importantly, make sure your point works without the use of figurative language. 
@@ -234,25 +260,38 @@ The main inspiration for this is from https://practicaltypography.com/hyphens-an
 
 === Hyphens 
 
-* Use hyphens around phrasal adjectives — i.e., tougher-than-nails rock, over-the-top personality. 
-* A hyphen is used for avoiding ambiguity — i.e., first hand item versus first-hand item, high school vs high-school. 
-* Multipart words also use hyphens — i.e., bric-a-brac, wishy-washy, tête-à-tête, fuel-efficient. 
+* Use hyphens around phrasal adjectives — e.g., tougher-than-nails rock, over-the-top personality. 
+
+* A hyphen is used for avoiding ambiguity — e.g., first hand item versus first-hand item, high school vs high-school. 
+
+* Multipart words also use hyphens — e.g., bric-a-brac, wishy-washy, tête-à-tête, fuel-efficient. 
+
 * Word breaks around line wrapping. 
-Though, it is more preferred to let the program (i.e., HTML, LaTeX, or Microsoft Word) to handle it automatically. 
+Though, it is more preferred to let the program (e.g., HTML, LaTeX, or Microsoft Word) to handle it automatically. 
 
 
 === En dashes 
 
-* An en dash is used for ranges — i.e., pages 21–34, lines 5–10. 
-* En dashes denote connections — i.e., north⁠–⁠south highway, Phillippines–South Korea alliance, Bender–Knuth involution. 
+* An en dash is used for ranges — e.g., pages 21–34, lines 5–10. 
+
+* En dashes denote connections — e.g., north⁠–⁠south highway Philippines–South Korea alliance, Bender–Knuth involution. 
+
+* Stronger pauses and breaks provided with a space on both sides — e.g., Operation Eagle - a military operation in the 1960s - has been a hallmark in the history of military for carrier pigoens. 
+An em dash can also serve the same purpose and it is more preferred. 
 
 
 === Em dashes 
 
-Don't forget to add a space on each side. 
+* Em dashes should be surrounded with spaces. 
+This is to make viewing easier across most fonts (especially when viewing with monospace fonts). 
 
 * Em dashes are used for stronger pauses and breaks when a comma or a colon is not strong enough. 
-* It is also used for stronger parenthetical materials when parenthesis is not strong enough — i.e., "— i.e., Value, Virtue —" versus "(i.e., Value, Virtue)". 
+They can be replaced with an en dash with spaces on both sides for this purpose. 
+
+* They are also used for stronger parenthetical materials when parenthesis is not strong enough — e.g., "— e.g., Value, Virtue —" versus "(e.g., Value, Virtue)". 
+
+* Em dashes are used to refer sources of quotations. 
+
 
 
 
@@ -260,10 +299,14 @@ Don't forget to add a space on each side.
 
 * Spell out the numbers 0 to 9. 
 If you have multiple numbers in the same sentence, you can use the figures instead. 
+
 * As a consequence of the above rule, negative numbers should always be rendered in figures (e.g., -1 instead of negative one). 
+
 * Use appropriate units for the numbers. 
+
 * The same applies for ordinal numbers. 
 Spell out 1st to 10th unless you have multiple ordinals. 
+
 * Don't use superscript for ordinal numbers. 
 
 
@@ -272,10 +315,14 @@ Spell out 1st to 10th unless you have multiple ordinals.
 == Date and time 
 
 * Strictly write with 24-hour clock format (e.g., 10:23, 22:41) for the time. 
+
 * In ranking of importance, the year has the highest priority. 
 In other words, any date or datetime strings can be trimmed down to only its year and it still gives a context to it. 
+
 * As a consequence of the previous rule, a year should be present at all times (e.g., "July 2015" instead of "July"). 
+
 * Use https://www.iso.org/iso-8601-date-and-time-format.html[ISO 8601] to refer to dates and datetime. 
+
 * Avoid using relative dates (e.g., as of this writing, two weeks ago). 
 Instead, be explicit (e.g., as of 2019-10-01, starting from 2019-09-16). 
 
@@ -286,10 +333,14 @@ Instead, be explicit (e.g., as of 2019-10-01, starting from 2019-09-16).
 
 * For ordered lists, avoid using roman numerals and letters. 
 Only use numbers similarly to sectioning numbers for hierarchy. 
+
 * If a list is introduced as if it's a part of the sentence, punctuate the list items and the connecting sentence correctly. 
 Otherwise, start with each list item as if it's another paragraph. 
+
 * Use https://www.grammarly.com/blog/what-is-the-oxford-comma-and-why-do-people-care-so-much-about-it/[serial commas]. 
+
 * Once a list item contains sublists, the entire list should be spaced out in raw source. 
+
 * Avoid using nested lists two levels deep. 
 
 
@@ -327,7 +378,7 @@ For formatting the citations, see the <<References>> section.
 === Bibliography
 
 The bibliography is a section for citing all resources used for creating the document. 
-To get us in the same page (no pun intended), https://blog.apastyle.org/apastyle/2011/02/whats-a-reference-list-for.html[a blog post] (though it's not entirely about biblographies) clarified what is a bibliography can be. 
+To get us in the same page (no pun intended), https://apastyle.apa.org/style-grammar-guidelines/references/lists-vs-bibliographies[a dedicated post] clarified what is a bibliography can be. 
 
 Biblographies can expand into references that are not explicitly cited anywhere in the document. 
 Reference lists, however, does not make it as an option. 
@@ -341,7 +392,7 @@ For casual writings, it can be named as "{bibliography_header_name_alt}".
 === Reference list
 
 Based from the APA style guide, a reference list is a simply a list of citations used throughout the entire document. 
-As mentioned from https://blog.apastyle.org/apastyle/2011/02/whats-a-reference-list-for.html[a previously linked blog post], a reference list shows that a student have done their research. 
+As mentioned from https://apastyle.apa.org/style-grammar-guidelines/references/lists-vs-bibliographies[a previously linked clarification], a reference list shows that a student have done their research. 
 
 Preferred header names include "{reference_list_header_name}" or "{reference_list_header_name_alt}". 
 
@@ -377,9 +428,24 @@ This is already covered in the <<Resource listing>> section.
 
 == Footnotes 
 
-* Footnote markers should be placed after a sentence or a clause. 
+Some examples applied with this style guide. 
+footnote:[Assume the footnote is in Asciidoctor-format `\^[x\]^` for clearer visualiation.] 
 
-* It is also preferred to surround the footnote markers with a space. 
+[literal]
+....
+Computer systems should be made up of components as referred to by Smith ^[1]^ and Gates ^[2]^.
+
+The collection of digital notes and textbooks can be found in our archives. ^[1]^
+....
+
+* Footnote markers should be placed after what it refers to. 
+If the footnote marker refers to the entire sentence, place it after the sentence. 
+If it refers to a particular portion of a text (e.g., a word, a clause), place it after the portion of the text. 
+
+* The footnote marker should be in superscript. 
+
+* It is also preferred to surround the footnote markers with a space and a pair of braces (`[x]`). 
+The alternative would be Oxford's way of formatting footnotes (i.e., no space). 
 
 * Generally, it is favored to make the footnote markers with numbers for easy referencing. 
 
@@ -388,3 +454,4 @@ In other words, it should continuously count footnote markings throughout the do
 
 * Since footnotes on most systems (i.e., Asciidoctor, LaTeX) only allows footnote to contain inline content, make sure to fit the footnote content within a sentence or two. 
 More than two sentences can warrant considering to include it in the appendix or at least its own subsection. 
+

@@ -31,7 +31,7 @@ References for building a branding style guide includes https://primer.style/[Pr
 The personal brand is described as lightly professional. 
 It should be like a formal colleague but can speak casually. 
 
-One of the main inspiration is https://en.wikipedia.org/wiki/Matthew_Butterick[Matthew Butterick]'s writings—most notably, https://practicaltypography.com/[_Practical Typography_]. 
+One of the main inspiration is https://en.wikipedia.org/wiki/Matthew_Butterick[Matthew Butterick]'s writings — most notably, https://practicaltypography.com/[_Practical Typography_]. 
 
 
 
