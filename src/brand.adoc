@@ -1,13 +1,13 @@
-= Brand style guide 
+= Brand style guide
 Gabriel Arazas <foo.dogsquared@gmail.com>
-2019-10-17 
+2019-10-17
 :toc:
 
 :main-font: Source Serif Pro
 :main-font-web: https://github.com/adobe-fonts/source-serif-pro
 
 :alt-font: Source Sans Pro
-:alt-font-web: https://github.com/adobe-fonts/source-sans-pro 
+:alt-font-web: https://github.com/adobe-fonts/source-sans-pro
 
 :math-font: STIX Two
 :math-font-web: https://www.stixfonts.org/
@@ -18,47 +18,47 @@ Gabriel Arazas <foo.dogsquared@gmail.com>
 :main-color: d59783
 :alternate-main-color: d37151
 
-This is a style on the brand I'm targeting. 
-This is only applicable for certain projects where a bit of marketing can play into the presentation. 
+This is a style on the brand I'm targeting.
+This is only applicable for certain projects where a bit of marketing can play into the presentation.
 
-References for building a branding style guide includes https://primer.style/[Primer design system] and https://brand.uber.com/guide[Uber brand style guide]. 
-
-
-
-
-== Persona 
-
-The personal brand is described as lightly professional. 
-It should be like a formal colleague but can speak casually. 
-
-One of the main inspiration is https://en.wikipedia.org/wiki/Matthew_Butterick[Matthew Butterick]'s writings — most notably, https://practicaltypography.com/[_Practical Typography_]. 
+References for building a branding style guide includes https://primer.style/[Primer design system] and https://brand.uber.com/guide[Uber brand style guide].
 
 
 
 
-== Fonts 
+== Persona
 
-There is a set of fonts used associated with the brand. 
+The personal brand is described as lightly professional.
+It should be like a formal colleague but can speak casually.
 
-The main font is {main-font-web}[{main-font}] with {alt-font-web}[{alt-font}] as the other pair. 
-
-If there is a need for mathematical fonts, {math-font}[{math-font-web}] is the font of choice. 
-
-For alternative font families, it is recommend to choose https://www.google.com/get/noto/[Noto] and https://github.com/IBM/plex[Plex] especially with the extensive international language support. 
+One of the main inspiration is https://en.wikipedia.org/wiki/Matthew_Butterick[Matthew Butterick]'s writings — most notably, https://practicaltypography.com/[_Practical Typography_].
 
 
 
 
-== Colors 
+== Fonts
 
-As of 2019-09-23, here's the color scheme (written as hex codes) for my brand. 
+There is a set of fonts used associated with the brand.
 
-* `#ffffff` as the foreground. 
-* `#000000` as the background. 
-* `#{main-color}` as the accent color. 
+The main font is {main-font-web}[{main-font}] with {alt-font-web}[{alt-font}] as the other pair.
+
+If there is a need for mathematical fonts, {math-font}[{math-font-web}] is the font of choice.
+
+For alternative font families, it is recommend to choose https://www.google.com/get/noto/[Noto] and https://github.com/IBM/plex[Plex] especially with the extensive international language support.
+
+
+
+
+== Colors
+
+As of 2019-09-23, here's the color scheme (written as hex codes) for my brand.
+
+* `#ffffff` as the foreground.
+* `#000000` as the background.
+* `#{main-color}` as the accent color.
 
 For my alternative darker theme, I use the following main colors for my brand.
 
-* `#080a0e` as the foreground. 
-* `#dbdbdb` as the background. 
-* `#{alternate-main-color}` as the accent. 
+* `#080a0e` as the foreground.
+* `#dbdbdb` as the background.
+* `#{alternate-main-color}` as the accent.

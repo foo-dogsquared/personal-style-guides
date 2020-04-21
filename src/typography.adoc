@@ -1,4 +1,4 @@
-= Typography style guide 
+= Typography style guide
 Gabriel Arazas <foo.dogsquared@gmail.com>
 2019-09-23
 :toc:
@@ -6,237 +6,240 @@ Gabriel Arazas <foo.dogsquared@gmail.com>
 :main-color: d59783
 :alternate-main-color: d37151
 
-This is a style guide for typography. 
-The style guide does not aim to be industry-grade style guide and I'm not a professional. 
-It's best to take it with a grain of salt. 
-It's also just enough for my basic needs. 
+This is a style guide for typography.
+The style guide does not aim to be industry-grade style guide and I'm not a professional.
+It's best to take it with a grain of salt.
+It's also just enough for my basic needs.
 
-Most of the rules set here are inspired from https://practicaltypography.com/[_Practical Typography_] by Matthew Butterick. 
-Other references include http://www.texdoc.net/texmf-dist/doc/latex/memoir/memman.pdf[LaTeX memoir class documentation] and http://texdoc.net/texmf-dist/doc/fonts/memdesign/memdesign.pdf[_A Few Notes on Book Design_]. 
+Most of the rules set here are inspired from https://practicaltypography.com/[_Practical Typography_] by Matthew Butterick.
+Other references include http://www.texdoc.net/texmf-dist/doc/latex/memoir/memman.pdf[LaTeX memoir class documentation] and http://texdoc.net/texmf-dist/doc/fonts/memdesign/memdesign.pdf[_A Few Notes on Book Design_].
 
-Like most of the style guides, I created this just to save some future headaches and to enforce consistency between my projects. 
-
-
-
-
-== Font size  
-
-The base font size should be at least 16px or higher. 
-
-The following specifications for the headers can be bent in case it's not suitable. 
-
-* Document title should be at least 150% larger than the base font size. 
-
-* Main headers (`<h2>` or any equivalent) should be at least twice as large (100%) as the base font size. 
-
-* Subheaders (`<h3>` or any equivalent) should be at least 75% larger than the base size. 
-
-If you need any headers lower than the subheaders then you may do as you wish. 
-Here's the base specifications for them. 
-From this point, judgement is best used here and can be easily different from what the general style guide describes. 
-
-* Section titles (`<h4>` or any equivalent) should be at least 50% larger. 
-
-* Subsection titles (`<h5>` or any equivalent) should be at least 25% larger. 
-
-* The least significant header (`<h6>` or any equivalent) should be at least 10% larger. 
+Like most of the style guides, I created this just to save some future headaches and to enforce consistency between my projects.
 
 
 
-== Font faces 
 
-The font faces used for the document should have a maximum number of 3: one for the serif font, one for sans serif font, and one for monospace. 
-You may also add another for math fonts and international fonts granted your main font doesn't support it. 
+== Font size
 
-The main (body) font should either be the serif or the sans serif. 
-The other font left out will be the secondary (header) font. 
-If the serif font is the main font, then the sans serif font is the secondary font. 
-The preferred option here is to make serif fonts the main font. 
+* The base font size should be at least 16px or higher.
 
-A good selection of serif fonts include https://github.com/adobe-fonts/source-serif-pro[Source Serif Pro], https://practicaltypography.com/charter.html[Charter], https://github.com/IBM/plex[IBM Plex serif variant], https://www.google.com/get/noto/#serif-lgc[Noto Serif], and 
-https://garamond.org/[Garamond]. 
+* Document title should be at least 150% larger than the base font size.
 
-As for the sans serif fonts, a great free fonts selection include https://www.cooperhewitt.org/open-source-at-cooper-hewitt/cooper-hewitt-the-typeface-by-chester-jenkins/[Cooper Hewitt], 
-https://github.com/adobe-fonts/source-sans-pro[Source Sans Pro], https://www.google.com/get/noto/#sans-lgc[Noto Sans], https://github.com/IBM/plex[IBM Plex sans serif variant], and https://mozilla.github.io/Fira/[Fira Sans]. 
+* Main headers (`<h2>` or any equivalent) should be at least twice as large (100%) as the base font size.
 
-Last but not least, examples of a great (free) monospace font are https://github.com/tonsky/FiraCode[Fira Code], https://github.com/adobe-fonts/source-code-pro[Source Code Pro], https://adobe-fonts.github.io/source-code-pro/[IBM Plex monospace variant], https://www.google.com/get/noto/#mono-mono[Noto Mono], and https://typeof.net/Iosevka/[Iosevka]. 
+* Subheaders (`<h3>` or any equivalent) should be at least 75% larger than the base size.
 
-If you need a font with mathematical typesetting, have a look in my math font selection which includes http://www.gust.org.pl/projects/e-foundry/lm-math[Latin Modern Math], https://github.com/stipub/stixfonts[STIX], https://github.com/alif-type/xits[XITS] (based from the STIX font), and https://www.ctan.org/tex-archive/fonts/Asana-Math/[Asana Math]. 
+If you need any headers lower than the subheaders then you may do as you wish.
+Here's the base specifications for them.
+From this point, judgement is best used here and can be easily different from what the general style guide describes.
+
+* Section titles (`<h4>` or any equivalent) should be at least 50% larger.
+
+* Subsection titles (`<h5>` or any equivalent) should be at least 25% larger.
+
+* The least significant header (`<h6>` or any equivalent) should be at least 10% larger.
+
+
+
+== Font faces
+
+The font faces used for the document should have a maximum number of 3: one for the serif font, one for sans serif font, and one for monospace.
+You may also add another for math fonts and international fonts granted your main font doesn't support it.
+
+The main (body) font should either be the serif or the sans serif.
+The other font left out will be the secondary (header) font.
+If the serif font is the main font, then the sans serif font is the secondary font.
+The preferred option here is to make serif fonts the main font.
+
+A good selection of serif fonts include https://github.com/adobe-fonts/source-serif-pro[Source Serif Pro], https://practicaltypography.com/charter.html[Charter],
+https://github.com/IBM/plex[IBM Plex serif variant], https://www.google.com/get/noto/#serif-lgc[Noto Serif], and https://garamond.org/[Garamond].
+
+As for the sans serif fonts, a great free fonts selection include https://www.cooperhewitt.org/open-source-at-cooper-hewitt/cooper-hewitt-the-typeface-by-chester-jenkins/[Cooper Hewitt],
+https://github.com/adobe-fonts/source-sans-pro[Source Sans Pro], https://www.google.com/get/noto/#sans-lgc[Noto Sans],
+https://github.com/IBM/plex[IBM Plex sans serif variant], and https://mozilla.github.io/Fira/[Fira Sans].
+
+Last but not least, examples of a great (free) monospace font are https://github.com/tonsky/FiraCode[Fira Code],
+https://github.com/adobe-fonts/source-code-pro[Source Code Pro], https://adobe-fonts.github.io/source-code-pro/[IBM Plex monospace variant],
+https://www.google.com/get/noto/#mono-mono[Noto Mono], and https://typeof.net/Iosevka/[Iosevka].
+
+If you need a font with mathematical typesetting, have a look in my math font selection which includes http://www.gust.org.pl/projects/e-foundry/lm-math[Latin Modern Math],
+https://github.com/stipub/stixfonts[STIX], https://github.com/alif-type/xits[XITS] (based from the STIX font),
+and https://www.ctan.org/tex-archive/fonts/Asana-Math/[Asana Math].
 
 For fonts with wide international support (i.e., Chinese, Japanese, Korean, Arabian), you can mainly look for https://www.google.com/get/noto/[Noto family], https://www.gnu.org/software/freefont/[GNU FreeFont], and https://github.com/IBM/plex[Plex].
 
 
 
 
-== Colors 
+== Colors
 
-HSV should be used as the color model for basing colors. 
-If it's not possible, go ahead with RGB/A (either the RGB tuple or the hex code). 
+HSV should be used as the color model for basing colors.
+If it's not possible, go ahead with RGB/A (either the RGB tuple or the hex code).
 
-Documents should use at least 3 main colors but not more than 6. 
-For each main color, there should be subselection of variants of the color. 
-Preferrably, it could be https://www.thespruce.com/understanding-analogous-colors-1973820[a set of colors analogous to the main color].  
+Documents should use at least 3 main colors but not more than 6.
+For each main color, there should be subselection of variants of the color.
+Preferrably, it could be https://www.thespruce.com/understanding-analogous-colors-1973820[a set of colors analogous to the main color].
 
-The colors chosen should be mainly divided into three parts: 
+The colors chosen should be mainly divided into three parts:
 
-* the background, 
-* the foreground, 
-* and the accent colors. 
+* the background,
+* the foreground,
+* and the accent colors.
 
-The background and foreground should only contain one main color (with the variants). 
-Obviously, the background should give strong contrast to the foreground. 
+The background and foreground should only contain one main color (with the variants).
+Obviously, the background should give strong contrast to the foreground.
 
-The background is used as the color for the whole document. 
-Preferrably, it should be white (or closer to white). 
+The background is used as the color for the whole document.
+Preferrably, it should be white (or closer to white).
 
-The foreground will be used as the primary color for the content. 
-Preferrably, it should be black (or closer to black). 
+The foreground will be used as the primary color for the content.
+Preferrably, it should be black (or closer to black).
 
-The rest of the colors are classified as the accents with one of them considered to be the primary color of the document. 
-If there are more than one accent color, it is preferred to get the triadic colors of the primary color. 
-
-
-=== Alternative color scheming 
-
-In rare cases that you need alternative color schemes for your documents (or website), you may create another color palette with the alternative colors. 
-
-The structure should be the same as the original color palette. 
-If you assign 3 main colors to your main palette, then there should 3 colors to your alternative palette. 
-
-Preferably, the alternative theme should be in stark contrast with the main theme. 
-In this case, the background should now be the foreground and vice versa. 
-As for your accents, the easy way out would be choosing its https://color-wheel-artist.com/complementary-colors-defined/[complement]. 
-You could also make the accent the same but make sure it stands out in the document. 
+The rest of the colors are classified as the accents with one of them considered to be the primary color of the document.
+If there are more than one accent color, it is preferred to get the triadic colors of the primary color.
 
 
+=== Alternative color scheming
 
-== Brand 
+In rare cases that you need alternative color schemes for your documents (or website), you may create another color palette with the alternative colors.
 
-As of 2019-09-23, here's the color scheme (written as hex codes) for my brand. 
+The structure should be the same as the original color palette.
+If you assign 3 main colors to your main palette, then there should 3 colors to your alternative palette.
 
-* `#ffffff` as the foreground. 
-* `#000000` as the background. 
-* `#{main-color}` as the accent color. 
+Preferably, the alternative theme should be in stark contrast with the main theme.
+In this case, the background should now be the foreground and vice versa.
+As for your accents, the easy way out would be choosing its https://color-wheel-artist.com/complementary-colors-defined/[complement].
+You could also make the accent the same but make sure it stands out in the document.
+
+
+
+== Brand
+
+As of 2019-09-23, here's the color scheme (written as hex codes) for my brand.
+
+* `#ffffff` as the foreground.
+* `#000000` as the background.
+* `#{main-color}` as the accent color.
 
 For my alternative darker theme, I use the following main colors for my brand.
 
-* `#ffffff` as the foreground. 
-* `#000000` as the background. 
-* `#{alternate-main-color}` as the accent. 
+* `#ffffff` as the foreground.
+* `#000000` as the background.
+* `#{alternate-main-color}` as the accent.
 
 
 
 
-== Document formatting 
+== Document formatting
 
-Here's the set of rules for formatting your document output. 
+Here's the set of rules for formatting your document output.
 
-There are various output formats so we'll divide further into each format. 
-However, there is a set of rules generally applied to all formats. 
+There are various output formats so we'll divide further into each format.
+However, there is a set of rules generally applied to all formats.
 
-* The optimal characters per line for the documents is 60 to 80. 
+* The optimal characters per line for the documents is 60 to 80.
 
-* The content body should be centered on the document. 
+* The content body should be centered on the document.
 
-* Avoid using justified https://en.wikipedia.org/wiki/Typographic_alignment[text alignment] as much as possible and instead use a ragged-left (or flush-right) alignment. 
-Much more so when publishing for the web. 
-The justified text tends to create https://en.wikipedia.org/wiki/River_(typography)[rivers] and it can look cluttered. 
-
-
-=== Book (or book-like) 
-
-This is commonly applied with https://www.latex-project.org/[LaTeX documents] and other book publication toolchains. 
-
-* If the book (or book-like) output includes headers, footers, and page numbers, align them with the content body. 
-
-* There should be margins that measures at least 1 inch on all sides. 
-
-* Make sure there is at least a title page, preface (if any), table of contents, and table of figures. 
+* Avoid using justified https://en.wikipedia.org/wiki/Typographic_alignment[text alignment] as much as possible and instead use a ragged-left (or flush-right) alignment.
+Much more so when publishing for the web.
+The justified text tends to create https://en.wikipedia.org/wiki/River_(typography)[rivers] and it can look cluttered.
 
 
-=== Website 
+=== Book (or book-like)
 
-When you create your own website, it is best to give focus on the typography at first since "Content is king." as they say. 
+This is commonly applied with https://www.latex-project.org/[LaTeX documents] and other book publication toolchains.
 
-* Use https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries[media queries] to set breakpoints for mobile and desktop screens. 
+* If the book (or book-like) output includes headers, footers, and page numbers, align them with the content body.
 
-* Leave the default font size for the mobile screens and apply the base font size for tablet (or larger) screens. 
-If you didn't apply this, your site does have a large font but it's uncomfortable to read for mobile devices. 
+* There should be margins that measures at least 1 inch on all sides.
 
-* Create two stylesheets: one for the base elements and the other for the site layout (with the classes applied, etc.). 
-In this way, you can easily inline the CSS style for your site and only wait for the layouts stylesheet to load. 
-
-* Use https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering[text rendering optimization], https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning[font kerning], and https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings[other font-related properties] you might find useful. 
+* Make sure there is at least a title page, preface (if any), table of contents, and table of figures.
 
 
+=== Website
+
+When you create your own website, it is best to give focus on the typography at first since "Content is king." as they say.
+
+* Use https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries[media queries] to set breakpoints for mobile and desktop screens.
+
+* Leave the default font size for the mobile screens and apply the base font size for tablet (or larger) screens.
+If you didn't apply this, your site does have a large font but it's uncomfortable to read for mobile devices.
+
+* Create two stylesheets: one for the base elements and the other for the site layout (with the classes applied, etc.).
+In this way, you can easily inline the CSS style for your site and only wait for the layouts stylesheet to load.
+
+* Use https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering[text rendering optimization], https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning[font kerning], and https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings[other font-related properties] you might find useful.
 
 
-== Content formatting 
 
 
-=== Links 
+== Content formatting
 
-Hyperlinks should be differently colored with no text decorations. 
 
-If the document is intended for printing, separate the text from the URL. 
-Furthermore, the URL should be in monospace and enclosed in parenthesis. 
+=== Links
+
+Hyperlinks should be differently colored with no text decorations.
+
+If the document is intended for printing, separate the text from the URL.
+Furthermore, the URL should be in monospace and enclosed in parenthesis.
 
 ----
 // Hyperlink with description (in Asciidoc)
-https://practicaltypography.com/[Practical Typography] 
+https://practicaltypography.com/[Practical Typography]
 
 // Text with URL (Asciidoc can detect URLs)
 Practical Typography (`https://practicaltypography.com/`)
 ----
 
-Speaking of URLs, any raw URLs should be formatted in monospace text. 
+Speaking of URLs, any raw URLs should be formatted in monospace text.
 
 
-=== Others  
+=== Others
 
-Here's the style guidelines for usual content formatting in the main body. 
+Here's the style guidelines for usual content formatting in the main body.
 
-* Prerendered text (`<pre>` or any equivalent) should strictly render as monospace text and have a slightly different background (usually the greyed background color) to easily discern them especially if the main font is monospace. 
+* Prerendered text (`<pre>` or any equivalent) should strictly render as monospace text and have a slightly different background (usually the greyed background color) to easily discern them especially if the main font is monospace.
 
-* Highlighted text (`<mark>` or any equivalent) should strictly render with the main font and sports a different background (usually the foreground) with the color of the background to easily discern from the prerendered text. 
+* Highlighted text (`<mark>` or any equivalent) should strictly render with the main font and sports a different background (usually the foreground) with the color of the background to easily discern from the prerendered text.
 
 
-=== Tables 
+=== Tables
 
-Basing on HTML tables, a table can be made up of a caption, a header, and the table body. 
-It should have 
+Basing on HTML tables, a table can be made up of a caption, a header, and the table body.
+It should have
 
-* Table headers should have the primary accent color as the background. 
+* Table headers should have the primary accent color as the background.
 
-* Table captions should be at the bottom of the table. 
+* Table captions should be at the bottom of the table.
 
-* Tables should have zebra striping colors. 
-Preferrably, it should have the greyed background color for even rows. 
+* Tables should have zebra striping colors.
+Preferrably, it should have the greyed background color for even rows.
 
 
 === Lists
 
-* For ordered lists, avoid using roman numerals and letters. 
-Only use numbers similarly to sectioning numbers for hierarchy. 
+* For ordered lists, avoid using roman numerals and letters.
+Only use numbers similarly to sectioning numbers for hierarchy.
 
-* For unordered lists, simple shapes is preferred. 
+* For unordered lists, simple shapes is preferred.
 
-* If the list is handled by the program (which it should be nowadays), set it accordingly. 
-For LaTeX documents, there's no need to since it is built for easy structuring of the book. 
-For HTML, use https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters[CSS counters]. 
-
-
+* If the list is handled by the program (which it should be nowadays), set it accordingly.
+For LaTeX documents, there's no need to since it is built for easy structuring of the book.
+For HTML, use https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters[CSS counters].
 
 
-== Content spacing 
 
-Avoid using paragraph indentations and use adequate amount of paragraph spaces instead. 
 
-Vertical rhythm should be observed. 
-The vertical space between typeblock elements (paragraphs, images, etc.) should be at least twice the base font size to easily notice it. 
+== Content spacing
 
-As for headers, the primary headers (`<h2>` or any equivalent) should have a top margin thrice of the base font size. 
-For subheaders (`<h3>` or any equivalent), they should have a top space that is 150% larger than the base font size. 
+Avoid using paragraph indentations and use adequate amount of paragraph spaces instead.
 
-As for the rest of the headers, the normal vertical margin should be applied. 
+Vertical rhythm should be observed.
+The vertical space between typeblock elements (paragraphs, images, etc.) should be at least twice the base font size to easily notice it.
+
+As for headers, the primary headers (`<h2>` or any equivalent) should have a top margin thrice of the base font size.
+For subheaders (`<h3>` or any equivalent), they should have a top space that is 150% larger than the base font size.
+
+As for the rest of the headers, the normal vertical margin should be applied.
 

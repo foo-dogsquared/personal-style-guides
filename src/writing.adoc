@@ -13,423 +13,439 @@ Gabriel Arazas <foo.dogsquared@gmail.com>
 :reference_list_header_name_alt: Citations
 
 
-Here's my general style guide for writing for future references. 
-As such, this is updated periodically. 
+Here's my general style guide for writing for future references.
+As such, this is updated periodically.
 
-Most of the rules set here are the result of me being lazy and avoiding future migraines. 
+Most of the rules set here are the result of me being lazy and avoiding future migraines.
 
-One of the primary goals of this style guide is to future-proofing your content while making it readable enough to share it with other readers. 
-Remember if you're making it better for your readers, it also makes it better for yourself. 
-This style guide also aims to save time on searching, archiving, and editing your document. 
+One of the primary goals of this style guide is to future-proofing your content while making it readable enough to share it with other readers.
+Remember if you're making it better for your readers, it also makes it better for yourself.
+This style guide also aims to save time on searching, archiving, and editing your document.
 
-This is mainly inspired from the following sources: 
+This is mainly inspired from the following sources:
 
-* http://www.cs.uky.edu/~raphael/writing.html[_Hints on writing style_] 
-* https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/[_A beginner’s guide to writing documentation_ from "Write the Docs"] 
-* https://docs.microsoft.com/en-us/style-guide/welcome/[_Microsoft Writing Style Guide_] 
+* http://www.cs.uky.edu/~raphael/writing.html[_Hints on writing style_]
+* https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/[_A beginner’s guide to writing documentation_ from "Write the Docs"]
+* https://docs.microsoft.com/en-us/style-guide/welcome/[_Microsoft Writing Style Guide_]
 * https://www.ox.ac.uk/sites/files/oxford/media_wysiwyg/University%20of%20Oxford%20Style%20Guide.pdf[_University of Oxford Style Guide_]
-* https://wikipedia.org/[Wikipedia] 
-* https://apastyle.apa.org/[APA style guide] 
+* https://wikipedia.org/[Wikipedia]
+* https://apastyle.apa.org/[APA style guide]
 
 
 
 
-== Write one sentence per line 
+== Write one sentence per line
 
-There are no character limits per line enforced but be practical with the limit. 
-The https://sembr.org/[Semantic Line Breaks] can apply if you think the source code is getting tiring to read. 
+There are no character limits per line enforced but be practical with the limit.
+The https://sembr.org/[Semantic Line Breaks] can apply if you think the source code is getting tiring to read.
 
-For clarification, sentences that are connected with a semicolon are considered two sentences. 
-They need to be in separated lines. 
+For clarification, sentences that are connected with a semicolon are considered two sentences.
+They need to be in separated lines.
 
-In writing with https://asciidoctor.org/[Asciidoctor], there are cases where this particular rule will break. 
-In case that the sentence is filled with macros (commonly footnotes) then we apply the semantic line breaks here. 
-
-
-
-
-== Document structure 
-
-Regarding the document itself, it should follow the set guidelines below. 
-
-* The document title should be formatted in sentence case (only capitalize the first word). 
-Proper nouns should be capitalized correctly. 
-
-* A revision string should be present in all documents. 
-This could be the Git commit hash or the modified datestamp in https://www.iso.org/iso-8601-date-and-time-format.html[ISO 8601]. 
-
-* A list of authors. 
-
-* A list of contributors (if the document is open for contributions). 
-
-* All types of headers within the document are in sentence case (only the first word is capitalized except for proper nouns). 
-
-* In case the document will use sectioning numbers, stay with using numbers to easily recognize the hierarchy (e.g., section 1.2.3 is easier to visualize instead of 1.2.C). 
+In writing with https://asciidoctor.org/[Asciidoctor], there are cases where this particular rule will break.
+In case that the sentence is filled with macros (commonly footnotes) then we apply the semantic line breaks here.
 
 
 
 
-== Document sections 
+== Document structure
 
-There are different kinds and parts of a document. 
-Nonetheless, title of chapters, sections, subsections, parts, and the document itself should be written in sentence case. 
+Regarding the document itself, it should follow the set guidelines below.
 
-For easy reference, there's a following list of parts of a document that should be written in sentence case. 
+* The document title should be formatted in sentence case (only capitalize the first word).
+Proper nouns should be capitalized correctly.
 
-* The document title. 
-* The parts and chapters, if it's a book. 
-* The sections and its subsections. 
-* A dedicated section for listing resources used to refer on writing. 
+* A revision string should be present in all documents.
+This could be the Git commit hash or the modified datestamp in https://www.iso.org/iso-8601-date-and-time-format.html[ISO 8601].
 
-A document may also have additional sections. 
-However, the section should appear if it is necessary and satisfies their related condition(s). 
+* A list of authors.
 
-* The abstract, if it tackles a technical concept. 
-* The bibliography, if it contains many references to works. 
-* The appendix, if the document is too extensive. 
-* Glossaries, if the document is too technical. 
-* The conclusion, if it's an article and the like. 
+* A list of contributors (if the document is open for contributions).
+
+* All types of headers within the document are in sentence case (only the first word is capitalized except for proper nouns).
+
+* In case the document will use sectioning numbers, stay with using numbers to easily recognize the hierarchy (e.g., section 1.2.3 is easier to visualize instead of 1.2.C).
 
 
 
 
-== Raw source spacing 
+== Document sections
 
-While the output may be the same, it is still important for the raw source to be readable. 
-Hence, there is a need to space out certain parts of a raw document. 
+There are different kinds and parts of a document.
+Nonetheless, title of chapters, sections, subsections, parts, and the document itself should be written in sentence case.
 
-It will also make it easier to read and maintain the document. 
+For easy reference, there's a following list of parts of a document that should be written in sentence case.
 
-* If possible, main title (`<h1>` or any equivalent) should be in the first line. 
+* The document title.
+* The parts and chapters, if it's a book.
+* The sections and its subsections.
+* A dedicated section for listing resources used to refer on writing.
 
-* Headers (`<h2>` or any equivalent) should be preceded by four newlines. 
+A document may also have additional sections.
+However, the section should appear if it is necessary and satisfies their related condition(s).
 
-* All types of subheaders (`<h3>`, ..., `<h6>` or any equivalent) should be preceded by two newlines. 
+* The abstract, if it tackles a technical concept.
+* The bibliography, if it contains many references to works.
+* The appendix, if the document is too extensive.
+* Glossaries, if the document is too technical.
+* The conclusion, if it's an article and the like.
 
-* There should be a space after each sentence. 
-Coupled with the one-sentence-per-line rule (with some semantic line breaks), this makes editing and creating paragraphs easier. 
 
-* There should be a newline before the end of the document. 
 
-* Once a list item contains sublists, the entire list should be spaced out. 
-The list could also be spaced if there's a list item with more than one sentence. 
 
-A particular rule may be nullified if the raw source spacing with the rule applied does affect the output. 
+== Raw source spacing
+
+While the output may be the same, it is still important for the raw source to be readable.
+Hence, there is a need to space out certain parts of a raw document.
+
+It will also make it easier to read and maintain the document.
+
+* If possible, main title (`<h1>` or any equivalent) should be in the first line.
+
+* Headers (`<h2>` or any equivalent) should be preceded by four newlines.
+
+* All types of subheaders (`<h3>`, ..., `<h6>` or any equivalent) should be preceded by two newlines.
+
+* There should be a space after each sentence.
+Coupled with the one-sentence-per-line rule (with some semantic line breaks), this makes editing and creating paragraphs easier.
+
+* There should be a newline before the end of the document.
+
+* Once a list item contains sublists, the entire list should be spaced out.
+The list could also be spaced if there's a list item with more than one sentence.
+
+A particular rule may be nullified if the raw source spacing with the rule applied does affect the output.
 
 
 
 
 == General style
 
-* Use simple language even in a technical document. 
+* Use simple language even in a technical document.
 
-* Write in informal tone. 
+* Write in informal tone.
 
-* Write the content in present tense. 
+* Write the content in present tense.
 
-* Ensure sentences are written https://www.grammarly.com/blog/parallelism/[in parallel]. 
+* Ensure sentences are written https://www.grammarly.com/blog/parallelism/[in parallel].
 
-* Avert using double negatives (e.g., "not unusual" and "no different"). 
-Phrases such as "not less than" are still accepted if it's used mathematically. 
+* Avert using double negatives (e.g., "not unusual" and "no different").
+Phrases such as "not less than" are still accepted if it's used mathematically.
 
-* Avoid using contractions (e.g., "do not" instead of "don't", "shall not" instead of "shan't"). 
+* Alternatively use contractions of transitive verbs (e.g., "do not", "shall not") for subtle variety.
 
-* For introducing abbreviations, write out the full name first then the abbreviation in parenthesis. 
-Then you can now use the abbreviated form after. 
+* For introducing abbreviations, write out the full name first then the abbreviation in parenthesis.
+Then you can now use the abbreviated form after.
 
-* Restrict the number of sentences in each paragraph to have a maximum of 10. 
+* Restrict the number of sentences in each paragraph to have a maximum of 10.
 
-* Avoid using unit symbols (e.g., `"` for inches, `°` for degrees) in writing. 
+* Avoid using unit symbols (e.g., `"` for inches, `°` for degrees) in writing.
 
-* No emojis! >:-D 
+* No emojis! >:-D
 
-* Emoticons are accepted and should be used sparingly. 
+* Emoticons are accepted and should be used sparingly.
 
-* Texting lingo such as IDK (I don't know), BRB (be right back), and LOL (laugh out loud) are heavily prohibited. 
+* Texting lingo such as IDK (I don't know), BRB (be right back), and LOL (laugh out loud) are heavily prohibited.
 
-* Use the Latin words id est (**that is** in English, abbreviated as "i.e.") and "e.g." (**examples given** in English, abbreviated as "e.g.") for parenthetical materials. 
-Otherwise, use the language equivalent. 
-Also add a comma at the end. 
+* Use the Latin words id est (**that is** in English, abbreviated as "i.e.") and "e.g." (**examples given** in English, abbreviated as "e.g.") for parenthetical materials.
+Otherwise, use the language equivalent.
+Also add a comma at the end.
 
-* Use formal inclusive terms such as "everyone", "all", and "community". 
-That said, informal inclusive terms are lightly discouraged. 
-
-
+* Use formal inclusive terms such as "everyone", "all", and "community".
+That said, informal inclusive terms are lightly discouraged.
 
 
-== Common words 
 
-I take note that I usually use certain words a lot. 
-To make the writing not monotonous and spice things up a bit, consecutive use of those words are discouraged. 
 
-Just for the sake of quick reference, there is a table of common words with their synonyms. 
+== Technical documents
+
+* If the document has some prerequisites, specify them preferably in order of importance or in alphabetical order.
+Furthermore, the version is mandatory to be added along if the prerequisite comes in different version — e.g., a document about https://git-scm.com/[Git] should make note of the version used at the time of writing.
+This enables some reproducibility of the report for others and most importantly, yourself.
+
+* If present, prerequisites should be one of the first topics on the document.
+
+* A dedicated section to prerequisites may be created if it has more than two paragraphs.
+
+* Some form of entry-level explanation is highly encouraged.
+The best mnemonic I often found applying myself is the https://betterexplained.com/articles/adept-method/[ADEPT method] from "Better Explained".
+Only apply this method if it's necessary and fitting for your audience.
+A thesis may not need it but a personal wiki will appreciate it.
+
+
+
+
+== Common words
+
+I take note that I usually use certain words a lot.
+To make the writing not monotonous and spice things up a bit, consecutive use of those words are discouraged.
+
+Just for the sake of quick reference, there is a table of common words with their synonyms.
 
 [cols="4*",options="header"]
 |===
-| Common word(s) 
-| Type 
-| Suggested words 
+| Common word(s)
+| Type
+| Suggested words
 | Note
 
-| usually, commonly 
+| usually, commonly
 | adverb
-| normally, frequently, consistently, generally, regularly, routinely 
-| 
+| normally, frequently, consistently, generally, regularly, routinely
+|
 
-| variations, variants 
+| variations, variants
 | noun
 | versions, branches, alternatives
 |
 
-| quick 
+| quick
 | adjective
-| fast, agile, rapid, swift, immediate 
-| 
+| fast, agile, rapid, swift, immediate
+|
 
-| common 
-| adjective 
-| typical, universal, ubiquitous, usual, everyday 
-| 
+| common
+| adjective
+| typical, universal, ubiquitous, usual, everyday
+|
 
 | run
-| verb 
-| invoke, call 
-| This is used to mean running a command (e.g., from the shell) or invoking a function (e.g., from source code). 
-Pedantic meaning of each term is not considered yet. 
+| verb
+| invoke, call
+| This is used to mean running a command (e.g., from the shell) or invoking a function (e.g., from source code).
+Pedantic meaning of each term is not considered yet.
 
 |===
 
 
 
 
-== Continuity 
+== Continuity
 
-This refers to the flow of ideas and expressions throughout the document. 
+This refers to the flow of ideas and expressions throughout the document.
 
-Following from the https://apastyle.apa.org/[APA style guide], you should make use of the following: 
+Following from the https://apastyle.apa.org/[APA style guide], you should make use of the following:
 
-* Use punctuations properly to show the relationship of the ideas. 
-This also marks how your text should be read. 
+* Use punctuations properly to show the relationship of the ideas.
+This also marks how your text should be read.
 
-* Make use of transitional words for scenarios to show transition to time (e.g., 'then', 'after', 'since'), events (e.g., 'therefore', 'consequently', 'as a result'), and presentation of other (e.g., 'conversely', 'but', 'however') or additional ideas (e.g., 'additionally', 'and', 'similarly'). 
+* Make use of transitional words for scenarios to show transition to time (e.g., 'then', 'after', 'since'), events (e.g., 'therefore', 'consequently', 'as a result'), and presentation of other (e.g., 'conversely', 'but', 'however') or additional ideas (e.g., 'additionally', 'and', 'similarly').
 
-* Be mindful with the correct verb tense for your ideas. 
-If done incorrectly, it can make your idea flow rough and throw off your readers a little. 
-
-
+* Be mindful with the correct verb tense for your ideas.
+If done incorrectly, it can make your idea flow rough and throw off your readers a little.
 
 
-== Figurative language 
 
-* Most importantly, make sure your point works without the use of figurative language. 
 
-* Use of hyperboles, understatements, similes, and clichés are discouraged. 
+== Figurative language
 
-* Use very minimal amount of colloqualisms and slang. 
+* Most importantly, make sure your point works without the use of figurative language.
 
-* Use minimal amount of metaphors and analogies. 
+* Use of hyperboles, understatements, similes, and clichés are discouraged.
 
-* An argument/point can only have a metaphor or an analogy but not both. 
+* Use very minimal amount of colloqualisms and slang.
 
-* Don't build your whole (or even majority) of your point around metaphors and analogies. 
-If you did, reconsider your argument. 
+* Use minimal amount of metaphors and analogies.
+
+* An argument/point can only have a metaphor or an analogy but not both.
+
+* Don't build your whole (or even majority) of your point around metaphors and analogies.
+If you did, reconsider your argument.
 
 
 
 
 == Text formatting
 
-* Use boldface only for emphasizing. 
+* Use boldface only for emphasizing.
 
-* Use italics for referring to a title of a work such as the title of an article, book, audio, or video. 
+* Use italics for referring to a title of a work such as the title of an article, book, audio, or video.
 
-* Avoid using underlines, strikethroughs, and all caps. 
+* Avoid using underlines, strikethroughs, and all caps.
 
-* Typeblock elements (e.g., paragraphs, images, and equations) should be spaced out in the raw source. 
-
-
-
-
-== Dashes and hyphens 
-
-There are a lot of guides for using em dashes (`—`), en dashes (`–`), and hyphens (`-`). 
-For consistency, here are the personal use cases for each of them. 
-
-The main inspiration for this is from https://practicaltypography.com/hyphens-and-dashes.html[_Practical Typography_]. 
-
-
-=== Hyphens 
-
-* Use hyphens around phrasal adjectives — e.g., tougher-than-nails rock, over-the-top personality. 
-
-* A hyphen is used for avoiding ambiguity — e.g., first hand item versus first-hand item, high school vs high-school. 
-
-* Multipart words also use hyphens — e.g., bric-a-brac, wishy-washy, tête-à-tête, fuel-efficient. 
-
-* Word breaks around line wrapping. 
-Though, it is more preferred to let the program (e.g., HTML, LaTeX, or Microsoft Word) to handle it automatically. 
-
-
-=== En dashes 
-
-* An en dash is used for ranges — e.g., pages 21–34, lines 5–10. 
-
-* En dashes denote connections — e.g., north⁠–⁠south highway Philippines–South Korea alliance, Bender–Knuth involution. 
-
-* Stronger pauses and breaks provided with a space on both sides — e.g., Operation Eagle - a military operation in the 1960s - has been a hallmark in the history of military for carrier pigoens. 
-An em dash can also serve the same purpose and it is more preferred. 
-
-
-=== Em dashes 
-
-* Em dashes should be surrounded with spaces. 
-This is to make viewing easier across most fonts (especially when viewing with monospace fonts). 
-
-* Em dashes are used for stronger pauses and breaks when a comma or a colon is not strong enough. 
-They can be replaced with an en dash with spaces on both sides for this purpose. 
-
-* They are also used for stronger parenthetical materials when parenthesis is not strong enough — e.g., "— e.g., Value, Virtue —" versus "(e.g., Value, Virtue)". 
-
-* Em dashes are used to refer sources of quotations. 
+* Typeblock elements (e.g., paragraphs, images, and equations) should be spaced out in the raw source.
 
 
 
 
-== Numbers 
+== Dashes and hyphens
 
-* Spell out the numbers 0 to 9. 
-If you have multiple numbers in the same sentence, you can use the figures instead. 
+There are a lot of guides for using em dashes (`—`), en dashes (`–`), and hyphens (`-`).
+For consistency, here are the personal use cases for each of them.
 
-* As a consequence of the above rule, negative numbers should always be rendered in figures (e.g., -1 instead of negative one). 
-
-* Use appropriate units for the numbers. 
-
-* The same applies for ordinal numbers. 
-Spell out 1st to 10th unless you have multiple ordinals. 
-
-* Don't use superscript for ordinal numbers. 
+The main inspiration for this is from https://practicaltypography.com/hyphens-and-dashes.html[_Practical Typography_].
 
 
+=== Hyphens
+
+* Use hyphens around phrasal adjectives — e.g., tougher-than-nails rock, over-the-top personality.
+
+* A hyphen is used for avoiding ambiguity — e.g., first hand item versus first-hand item, high school vs high-school.
+
+* Multipart words also use hyphens — e.g., bric-a-brac, wishy-washy, tête-à-tête, fuel-efficient.
+
+* Word breaks around line wrapping.
+Though, it is more preferred to let the program (e.g., HTML, LaTeX, or Microsoft Word) to handle it automatically.
 
 
-== Date and time 
+=== En dashes
 
-* Strictly write with 24-hour clock format (e.g., 10:23, 22:41) for the time. 
+* An en dash is used for ranges — e.g., pages 21–34, lines 5–10.
 
-* In ranking of importance, the year has the highest priority. 
-In other words, any date or datetime strings can be trimmed down to only its year and it still gives a context to it. 
+* En dashes denote connections — e.g., north⁠–⁠south highway Philippines–South Korea alliance, Bender–Knuth involution.
 
-* As a consequence of the previous rule, a year should be present at all times (e.g., "July 2015" instead of "July"). 
+* Stronger pauses and breaks provided with a space on both sides — e.g., Operation Eagle - a military operation in the 1960s - has been a hallmark in the history of military for carrier pigoens.
+An em dash can also serve the same purpose and it is more preferred.
 
-* Use https://www.iso.org/iso-8601-date-and-time-format.html[ISO 8601] to refer to dates and datetime. 
 
-* Avoid using relative dates (e.g., as of this writing, two weeks ago). 
-Instead, be explicit (e.g., as of 2019-10-01, starting from 2019-09-16). 
+=== Em dashes
+
+* Em dashes should be surrounded with spaces.
+This is to make viewing easier across most fonts (especially when viewing with monospace fonts).
+
+* Em dashes are used for stronger pauses and breaks when a comma or a colon is not strong enough.
+They can be replaced with an en dash with spaces on both sides for this purpose.
+
+* They are also used for stronger parenthetical materials when parenthesis is not strong enough — e.g., "— e.g., Value, Virtue —" versus "(e.g., Value, Virtue)".
+
+* Em dashes are used to refer sources of quotations.
+
+
+
+
+== Numbers
+
+* Spell out the numbers 0 to 9.
+If you have multiple numbers in the same sentence, you can use the figures instead.
+
+* As a consequence of the above rule, negative numbers should always be rendered in figures (e.g., -1 instead of negative one).
+
+* Use appropriate units for the numbers.
+
+* The same applies for ordinal numbers.
+Spell out 1st to 10th unless you have multiple ordinals.
+
+* Don't use superscript for ordinal numbers.
+
+
+
+
+== Date and time
+
+* Strictly write with 24-hour clock format (e.g., 10:23, 22:41) for the time.
+
+* In ranking of importance, the year has the highest priority.
+In other words, any date or datetime strings can be trimmed down to only its year and it still gives a context to it.
+
+* As a consequence of the previous rule, a year should be present at all times (e.g., "July 2015" instead of "July").
+
+* Use https://www.iso.org/iso-8601-date-and-time-format.html[ISO 8601] to refer to dates and datetime.
+
+* Avoid using relative dates (e.g., as of this writing, two weeks ago).
+Instead, be explicit (e.g., as of 2019-10-01, starting from 2019-09-16).
 
 
 
 
 == Lists
 
-* For ordered lists, avoid using roman numerals and letters. 
-Only use numbers similarly to sectioning numbers for hierarchy. 
+* For ordered lists, avoid using roman numerals and letters.
+Only use numbers similarly to sectioning numbers for hierarchy.
 
-* If a list is introduced as if it's a part of the sentence, punctuate the list items and the connecting sentence correctly. 
-Otherwise, start with each list item as if it's another paragraph. 
+* If a list is introduced as if it's a part of the sentence, punctuate the list items and the connecting sentence correctly.
+Otherwise, start with each list item as if it's another paragraph.
 
-* Use https://www.grammarly.com/blog/what-is-the-oxford-comma-and-why-do-people-care-so-much-about-it/[serial commas]. 
+* Use https://www.grammarly.com/blog/what-is-the-oxford-comma-and-why-do-people-care-so-much-about-it/[serial commas].
 
-* Once a list item contains sublists, the entire list should be spaced out in raw source. 
+* Once a list item contains sublists, the entire list should be spaced out in raw source.
 
-* Avoid using nested lists two levels deep. 
-
-
-
-
-== Appendix 
-
-The appendix is a section dedicated for additional and supplemental information that is not suitable to be included in the main text. 
-footnote:[Look up https://practicaltypography.com/[Matthew Butterick's _Practical Typography_ book] as an example for appendix.] 
-
-It could be a group of sections listed with letters as counters. 
-
-The name of the header should be "{appendix_header_name}". 
-For an alternative, it can be named as "{appendix_header_name_alt}". 
-The alternative name is also used for documents with casual tone. 
-
-Most importantly, it is not the place for putting all of the research resources. 
-The bibliography section already takes care of that. 
+* Avoid using nested lists two levels deep.
 
 
 
 
-== Resource listing 
+== Appendix
 
-As much as self-explanatory this is, a resource listing is a section dedicated for listing the resources. 
+The appendix is a section dedicated for additional and supplemental information that is not suitable to be included in the main text.
+footnote:[Look up https://practicaltypography.com/[Matthew Butterick's _Practical Typography_ book] as an example for appendix.]
 
-There are mainly two types of resource listing: bibliography and related resources. 
+It could be a group of sections listed with letters as counters.
 
-Generally, a resource listing section is found at the end of the document (or the backmatter) with their own section/chapter. 
-This is for the convenience of the reader (including you). 
+The name of the header should be "{appendix_header_name}".
+For an alternative, it can be named as "{appendix_header_name_alt}".
+The alternative name is also used for documents with casual tone.
 
-For formatting the citations, see the <<References>> section. 
+Most importantly, it is not the place for putting all of the research resources.
+The bibliography section already takes care of that.
+
+
+
+
+== Resource listing
+
+As much as self-explanatory this is, a resource listing is a section dedicated for listing the resources.
+
+There are mainly two types of resource listing: bibliography and reference list.
+
+Generally, a resource listing section is found at the end of the document (or the backmatter) with their own section/chapter.
+This is for the convenience of the reader (including you).
+
+For formatting the citations, see the <<References>> section.
 
 
 === Bibliography
 
-The bibliography is a section for citing all resources used for creating the document. 
-To get us in the same page (no pun intended), https://apastyle.apa.org/style-grammar-guidelines/references/lists-vs-bibliographies[a dedicated post] clarified what is a bibliography can be. 
+The bibliography is a section for citing all resources used for creating the document.
+To get us in the same page (no pun intended), https://apastyle.apa.org/style-grammar-guidelines/references/lists-vs-bibliographies[a dedicated post] clarified what is a bibliography can be.
 
-Biblographies can expand into references that are not explicitly cited anywhere in the document. 
-Reference lists, however, does not make it as an option. 
+Biblographies can expand into references that are not explicitly cited anywhere in the document.
+Reference lists, however, does not make it as an option.
 
-One of the main (personal) purpose of including this section is to enable easier research on the required starting background reading. 
+One of the main (personal) purpose of including this section is to enable easier research on the required starting background reading.
 
-The name of the header should be "{bibliography_header_name}". 
-For casual writings, it can be named as "{bibliography_header_name_alt}". 
+The name of the header should be "{bibliography_header_name}".
+For casual writings, it can be named as "{bibliography_header_name_alt}".
 
 
 === Reference list
 
-Based from the APA style guide, a reference list is a simply a list of citations used throughout the entire document. 
-As mentioned from https://apastyle.apa.org/style-grammar-guidelines/references/lists-vs-bibliographies[a previously linked clarification], a reference list shows that a student have done their research. 
+Based from the APA style guide, a reference list is a simply a list of citations used throughout the entire document.
+As mentioned from https://apastyle.apa.org/style-grammar-guidelines/references/lists-vs-bibliographies[a previously linked clarification], a reference list shows that a student have done their research.
 
-Preferred header names include "{reference_list_header_name}" or "{reference_list_header_name_alt}". 
+Preferred header names include "{reference_list_header_name}" or "{reference_list_header_name_alt}".
 
-NOTE: Both reference lists and bibliographies should not appear in the same document. 
-A suggested action would be listing all of the cited resources in the resource lists and revamp the bibliography section to be an appendix for additional resources instead. 
-footnote:[Or not, as said previously, bibliographies can be used for additional resources so it's a matter of context and familiarity for your readers.] 
+NOTE: Both reference lists and bibliographies should not appear in the same document.
 
 
 
 
-== References 
+== References
 
-* For referring to articles, books, videos, audio, and images, the title should be in sentence case (capitalize only the first word and proper nouns). 
-This also applies to subtitles. 
+* For referring to articles, books, videos, audio, and images, the title should be in sentence case (capitalize only the first word and proper nouns).
+This also applies to subtitles.
 
-* Any linked references should have a retrieval date present, similar to Wikipedia's way of referring to things. 
-The format of the date depends on the style guide. 
-In this case, it should be in https://www.iso.org/iso-8601-date-and-time-format.html[ISO format]. 
-This reduces some confusion especially if the hyperlink is vulnerable to https://en.wikipedia.org/wiki/Link_rot[link rots]. 
+* Any linked references should have a retrieval date present, similar to Wikipedia's way of referring to things.
+The format of the date depends on the style guide.
+In this case, it should be in https://www.iso.org/iso-8601-date-and-time-format.html[ISO format].
+This reduces some confusion especially if the hyperlink is vulnerable to https://en.wikipedia.org/wiki/Link_rot[link rots].
 
-* Titles should be italicized. 
-If it's not possible, enclose them in quotation marks. 
+* Titles should be italicized.
+If it's not possible, enclose them in quotation marks.
 
-* If you include the author (e.g., the website, professionals, researchers), enclose them in quotation marks. 
+* If you include the author (e.g., the website, professionals, researchers), enclose them in quotation marks.
 
-* If you want to cite a source similarly to academic writings, use the https://www.bibme.org/citation-guide/apa/[APA citation style]. 
+* If you want to cite a source similarly to academic writings, use the https://www.bibme.org/citation-guide/apa/[APA citation style].
 
-* For bibliography or reference list, use https://www.bibme.org/citation-guide/apa/[APA style] for citations. 
-This is already covered in the <<Resource listing>> section. 
-
-
+* For bibliography or reference list, use https://www.bibme.org/citation-guide/apa/[APA style] for citations.
+This is already covered in the <<Resource listing>> section.
 
 
-== Footnotes 
 
-Some examples applied with this style guide. 
-footnote:[Assume the footnote is in Asciidoctor-format `\^[x\]^` for clearer visualiation.] 
+
+== Footnotes
+
+Some examples applied with this style guide.
+footnote:[Assume the footnote is in Asciidoctor-format `\^[x\]^` for clearer visualiation.]
 
 [literal]
 ....
@@ -438,20 +454,20 @@ Computer systems should be made up of components as referred to by Smith ^[1]^ a
 The collection of digital notes and textbooks can be found in our archives. ^[1]^
 ....
 
-* Footnote markers should be placed after what it refers to. 
-If the footnote marker refers to the entire sentence, place it after the sentence. 
-If it refers to a particular portion of a text (e.g., a word, a clause), place it after the portion of the text. 
+* Footnote markers should be placed after what it refers to.
+If the footnote marker refers to the entire sentence, place it after the sentence.
+If it refers to a particular portion of a text (e.g., a word, a clause), place it after the portion of the text.
 
-* The footnote marker should be in superscript. 
+* The footnote marker should be in superscript.
 
-* It is also preferred to surround the footnote markers with a space and a pair of braces (`[x]`). 
-The alternative would be Oxford's way of formatting footnotes (i.e., no space). 
+* It is also preferred to surround the footnote markers with a space and a pair of braces (`[x]`).
+The alternative would be Oxford's way of formatting footnotes (i.e., no space).
 
-* Generally, it is favored to make the footnote markers with numbers for easy referencing. 
+* Generally, it is favored to make the footnote markers with numbers for easy referencing.
 
-* If the footnote markers use numbers, the numbering system should have a global counter for the entire document. 
-In other words, it should continuously count footnote markings throughout the document and not affected by the usual number sectioning system whatsoever. 
+* If the footnote markers use numbers, the numbering system should have a global counter for the entire document.
+In other words, it should continuously count footnote markings throughout the document and not affected by the usual number sectioning system whatsoever.
 
-* Since footnotes on most systems (i.e., Asciidoctor, LaTeX) only allows footnote to contain inline content, make sure to fit the footnote content within a sentence or two. 
-More than two sentences can warrant considering to include it in the appendix or at least its own subsection. 
+* Since footnotes on most systems (i.e., Asciidoctor, LaTeX) only allows footnote to contain inline content, make sure to fit the footnote content within a sentence or two.
+More than two sentences can warrant considering to include it in the appendix or at least its own subsection.
 

@@ -1,62 +1,62 @@
-= LaTeX documents style guide 
+= LaTeX documents style guide
 Gabriel Arazas <foo.dogsquared@gmail.com>
 2019-09-26
 :toc:
 
 :label-prefix-indicator: !
 
-A style guide for creating and maintaining https://www.latex-project.org/[LaTeX] documents. 
-Most of the time, I use LaTeX to typeset beautiful mathematical expressions. 
+A style guide for creating and maintaining https://www.latex-project.org/[LaTeX] documents.
+Most of the time, I use LaTeX to typeset beautiful mathematical expressions.
 
-References include https://en.wikibooks.org/wiki/LaTeX[LaTeX Wikibook], http://www.texdoc.net/texmf-dist/doc/latex/memoir/memman.pdf[LaTeX memoir class documentation], and 
-http://texdoc.net/texmf-dist/doc/fonts/memdesign/memdesign.pdf[_A Few Notes on Book Design_]. 
-
-
-
-
-== LaTeX documents folder structure 
-
-LaTeX projects should have two folders: `content` and `styles`. 
-The folder name should be enough to explain their purpose. 
-The `content` folder is where the LaTeX documents are and the `styles` contain the custom class and packages. 
-
-Also, make sure the file and directory names are written in kebab case with only alphanumeric characters, underscore, and the dash. 
-Keep the length of the file name up to 256 characters. 
-
-If you compile the documents normally and being used in the content, the process would fail because of the style files located in another folder. 
-This is where tools like http://personal.psu.edu/jcc8//software/latexmk-jcc/[Latexmk] would be handy. 
-You can configure Latexmk to add the path of the styles into the LaTeX package search path. 
-Please see the <<LaTeX toolchain>> section for more information. 
+References include https://en.wikibooks.org/wiki/LaTeX[LaTeX Wikibook], http://www.texdoc.net/texmf-dist/doc/latex/memoir/memman.pdf[LaTeX memoir class documentation], and
+http://texdoc.net/texmf-dist/doc/fonts/memdesign/memdesign.pdf[_A Few Notes on Book Design_].
 
 
 
 
-== Writing guidelines 
+== LaTeX documents folder structure
 
-The writing style guide sits on top of the link:./writing.adoc[writing style guide]. 
-All of the writing format of the raw source is the same as other non-LaTeX documents. 
+LaTeX projects should have two folders: `content` and `styles`.
+The folder name should be enough to explain their purpose.
+The `content` folder is where the LaTeX documents are and the `styles` contain the custom class and packages.
 
-For writing format specifically with LaTeX, here are the general rules: 
+Also, make sure the file and directory names are written in kebab case with only alphanumeric characters, underscore, and the dash.
+Keep the length of the file name up to 256 characters.
 
-* No starting indents inside the document body (\`\begin{document}`). 
-* For environments inside the document body and  https://alvinalexander.com/blog/post/latex/two-simple-examples-using-latex-ifthen-package[conditionals], the content is indented. 
-* Indents should contain two spaces. 
+If you compile the documents normally and being used in the content, the process would fail because of the style files located in another folder.
+This is where tools like http://personal.psu.edu/jcc8//software/latexmk-jcc/[Latexmk] would be handy.
+You can configure Latexmk to add the path of the styles into the LaTeX package search path.
+Please see the <<LaTeX toolchain>> section for more information.
 
-.A sample of content formatting in the raw source  
+
+
+
+== Writing guidelines
+
+The writing style guide sits on top of the link:./writing.adoc[writing style guide].
+All of the writing format of the raw source is the same as other non-LaTeX documents.
+
+For writing format specifically with LaTeX, here are the general rules:
+
+* No starting indents inside the document body (\`\begin{document}`).
+* For environments inside the document body and  https://alvinalexander.com/blog/post/latex/two-simple-examples-using-latex-ifthen-package[conditionals], the content is indented.
+* Indents should contain two spaces.
+
+.A sample of content formatting in the raw source 
 [source,latex]
 ----
 \begin{document}
 
 \begin{env}
-  IDK about this. 
+  IDK about this.
 
   \begin{env2}
-  File content % indented content 
+  File content % indented content
   \end{env2}
 \end{env}
 
 \ifrootdocument
-  Then whatever happens here. 
+  Then whatever happens here.
 \fi
 \end{document}
 ----
@@ -64,14 +64,14 @@ For writing format specifically with LaTeX, here are the general rules:
 
 
 
-== Create an EditorConfig file 
+== Create an EditorConfig file
 
-As much as possible, create an https://editorconfig.org/[`.editorconfig`] file to easily describe the formatting of LaTeX documents. 
+As much as possible, create an https://editorconfig.org/[`.editorconfig`] file to easily describe the formatting of LaTeX documents.
 
-It also has the added bonus of integration with popular tools such as https://www.vim.org/[Vim] and https://code.visualstudio.com/[Visual Studio Code] by using their respective plugin. 
-If there's no EditorConfig plugin available, comply with the configuration. 
+It also has the added bonus of integration with popular tools such as https://www.vim.org/[Vim] and https://code.visualstudio.com/[Visual Studio Code] by using their respective plugin.
+If there's no EditorConfig plugin available, comply with the configuration.
 
-.Go-to configuration template for LaTeX documents 
+.Go-to configuration template for LaTeX documents
 [source,toml]
 ----
 [*.tex]
@@ -85,52 +85,52 @@ insert_final_newline = true
 
 
 
-== Standard page layout 
+== Standard page layout
 
-In order for us to keep in the same page (no pun intended), we need to know the page layout. 
+In order for us to keep in the same page (no pun intended), we need to know the page layout.
 
-There is an ideal page layout for the LaTeX documents. 
+There is an ideal page layout for the LaTeX documents.
 
-You can see a visualization of the layout at link:./latex/page-layout.pdf[the resulting PDF] of link:./latex/page-layout.tex[the minimal LaTeX document template]. 
-It's also useful for knowing the related terminologies used here. 
+You can see a visualization of the layout at link:./latex/page-layout.pdf[the resulting PDF] of link:./latex/page-layout.tex[the minimal LaTeX document template].
+It's also useful for knowing the related terminologies used here.
 
-Margin notes are not present since I'm writing it as my notes, after all. 
-You can either use admonition blocks (inspired from https://asciidoctor.org/docs/user-manual/#admonition[Asciidoctor admonitions]) or create a page layout that includes it. 
+Margin notes are not present since I'm writing it as my notes, after all.
+You can either use admonition blocks (inspired from https://asciidoctor.org/docs/user-manual/#admonition[Asciidoctor admonitions]) or create a page layout that includes it.
 
-If you decide to use admonition blocks, I've already created https://github.com/foo-dogsquared/latex-templates/blob/master/styles/docs-admonition-blocks.sty[a custom package] for it. 
-It mainly uses https://ctan.org/pkg/fontawesome5[fontawesome5], https://ctan.org/pkg/tcolorbox[tcolorbox], and https://www.ctan.org/pkg/chngcntr[chngcntr]. 
-You may modify it as you like. 
+If you decide to use admonition blocks, I've already created https://github.com/foo-dogsquared/latex-templates/blob/master/styles/docs-admonition-blocks.sty[a custom package] for it.
+It mainly uses https://ctan.org/pkg/fontawesome5[fontawesome5], https://ctan.org/pkg/tcolorbox[tcolorbox], and https://www.ctan.org/pkg/chngcntr[chngcntr].
+You may modify it as you like.
 
-In case you go with the latter, be sure to set some space for the margin notes. 
-You can see link:./latex/page-layout-with-margin-notes.tex[a sample LaTeX document] that includes margin notes. 
-You can also see the link:./latex/page-layout-with-margin-notes.pdf[resulting page layout visualization]. 
-
-
+In case you go with the latter, be sure to set some space for the margin notes.
+You can see link:./latex/page-layout-with-margin-notes.tex[a sample LaTeX document] that includes margin notes.
+You can also see the link:./latex/page-layout-with-margin-notes.pdf[resulting page layout visualization].
 
 
-== Typography 
 
-General typographic features of the document are applied from the link:typography.adoc[typography style guide]. 
-Please refer to it for more details. 
 
-There are specific details for LaTeX documents, though. 
+== Typography
 
-* Paper sizes are based from https://www.iso.org/standard/36631.html[ISO 216 standard]. 
+General typographic features of the document are applied from the link:typography.adoc[typography style guide].
+Please refer to it for more details.
+
+There are specific details for LaTeX documents, though.
+
+* Paper sizes are based from https://www.iso.org/standard/36631.html[ISO 216 standard].
 footnote:[https://www.cl.cam.ac.uk/~mgk25/iso-paper.html[Visit this page for more details.]]
-* Usual document size of choice includes A4 (210mm by 297mm) and above (i.e., A3, A2, A1). 
-* Margins on all sides of the document has a minimum length of 1.15 inches. 
-* Chapter style is based from Bianchi style (chapter number on top with the title surrounded by horizontal rules). 
-* The page footer is located `3em` of space after the content. 
-* No paragraph indentations, use paragraph spaces instead. 
-* Spaces between paragraphs measures a minimum of `1em`. 
-* Line height is at least 135% than normal. 
+* Usual document size of choice includes A4 (210mm by 297mm) and above (i.e., A3, A2, A1).
+* Margins on all sides of the document has a minimum length of 1.15 inches.
+* Chapter style is based from Bianchi style (chapter number on top with the title surrounded by horizontal rules).
+* The page footer is located `3em` of space after the content.
+* No paragraph indentations, use paragraph spaces instead.
+* Spaces between paragraphs measures a minimum of `1em`.
+* Line height is at least 135% than normal.
 
-For general styling of the document, here's a sample style. 
+For general styling of the document, here's a sample style.
 
 [source,latex]
 ----
 % set the paragraph formatting
-\renewcommand{\baselinestretch}{1.35} 
+\renewcommand{\baselinestretch}{1.35}
 
 % set chapter style
 \chapterstyle{bianchi}
@@ -147,11 +147,11 @@ For general styling of the document, here's a sample style.
 
 
 
-== LaTeX toolchain 
+== LaTeX toolchain
 
-For building LaTeX documents, use http://personal.psu.edu/jcc8//software/latexmk-jcc/[Latexmk] with a `latexmkrc` file for configuration. 
-It is mostly used to include the custom styles in the search package path. 
-It is useful in case you have custom packages in another folder. 
+For building LaTeX documents, use http://personal.psu.edu/jcc8//software/latexmk-jcc/[Latexmk] with a `latexmkrc` file for configuration.
+It is mostly used to include the custom styles in the search package path.
+It is useful in case you have custom packages in another folder.
 
 .Sample of configuring Latexmk with a latexmkrc
 [source]
@@ -161,42 +161,42 @@ ensure_path( 'TEXINPUTS', './styles//' );
 $clean_ext+="fdb_latexmk log listing pyg";
 ----
 
-For the engine of choice, use http://luatex.org/[LuaLaTeX]. 
-It features Lua integration that opens up the TeX internals and it can be more powerful (and easier) with programming in Lua. 
+For the engine of choice, use http://luatex.org/[LuaLaTeX].
+It features Lua integration that opens up the TeX internals and it can be more powerful (and easier) with programming in Lua.
 
-For starting with LuaLaTeX, you can start with the http://mirror.pregi.net/tex-archive/info/luatex/lualatex-doc/lualatex-doc.pdf[tour guide of LuaLaTeX]. 
-For more information on it, you can read the http://mirror.pregi.net/tex-archive/systems/doc/luatex/luatex.pdf[official reference guide]. 
+For starting with LuaLaTeX, you can start with the http://mirror.pregi.net/tex-archive/info/luatex/lualatex-doc/lualatex-doc.pdf[tour guide of LuaLaTeX].
+For more information on it, you can read the http://mirror.pregi.net/tex-archive/systems/doc/luatex/luatex.pdf[official reference guide].
 
-For bibliographies, using https://www.ctan.org/pkg/biblatex[BibLaTeX] is preferred. 
-
-
-
-
-== Custom packages and environments  
-
-Prefix your custom package and environment names with `doc` to prevent potential name conflicts. 
-
-In creating custom packages, be sure to name them exclusively in kebab case. 
-Also include the date in https://www.iso.org/iso-8601-date-and-time-format.html[ISO 8601 standard] with the version. 
-
-Don't forget to update the version if you modify the package. 
-This enables easy referencing for your packages. 
-
-For an example, you can see https://github.com/foo-dogsquared/latex-templates/blob/master/styles/docs-admonition-blocks.sty[a admonition blocks custom package] to know how it's done. 
+For bibliographies, using https://www.ctan.org/pkg/biblatex[BibLaTeX] is preferred.
 
 
 
 
-== Styling your documents 
+== Custom packages and environments 
 
-Putting all of the styling options in the preamble of the LaTeX document is discouraged. 
-Create a `.sty` file for convenience and consistent styling among the documents included in the project.  
-Since the styles are considered to be a custom package, comply with the custom packages guide lines set in this same document. 
+Prefix your custom package and environment names with `doc` to prevent potential name conflicts.
 
-The main style file should be named as `docs-config` and it is the entry point for your documents. 
-It contains all of the common packages and style between documents. 
+In creating custom packages, be sure to name them exclusively in kebab case.
+Also include the date in https://www.iso.org/iso-8601-date-and-time-format.html[ISO 8601 standard] with the version.
 
-This makes updating the styles easy and making the preamble to take less space. 
+Don't forget to update the version if you modify the package.
+This enables easy referencing for your packages.
+
+For an example, you can see https://github.com/foo-dogsquared/latex-templates/blob/master/styles/docs-admonition-blocks.sty[a admonition blocks custom package] to know how it's done.
+
+
+
+
+== Styling your documents
+
+Putting all of the styling options in the preamble of the LaTeX document is discouraged.
+Create a `.sty` file for convenience and consistent styling among the documents included in the project. 
+Since the styles are considered to be a custom package, comply with the custom packages guide lines set in this same document.
+
+The main style file should be named as `docs-config` and it is the entry point for your documents.
+It contains all of the common packages and style between documents.
+
+This makes updating the styles easy and making the preamble to take less space.
 
 [source,latex]
 ----
@@ -204,169 +204,169 @@ This makes updating the styles easy and making the preamble to take less space.
 
 \usepackage{docs-config}
 
-% Specific packages and styling options are only left here 
+% Specific packages and styling options are only left here
 \usepackage{specific-package1}
 \specificpackageoption{OK}
 
 \begin{document}
-% Content of the document 
+% Content of the document
 \end{document}
 ----
 
-You can see https://github.com/foo-dogsquared/latex-templates/blob/master/styles/docs-config.sty[an example of the main style]. 
-It should be the current preferences for the usual documents. 
+You can see https://github.com/foo-dogsquared/latex-templates/blob/master/styles/docs-config.sty[an example of the main style].
+It should be the current preferences for the usual documents.
 
 
 
 
-== Modular documents 
+== Modular documents
 
-In case your LaTeX documents needs to be modular, use https://ctan.org/pkg/standalone[standalone] package. 
+In case your LaTeX documents needs to be modular, use https://ctan.org/pkg/standalone[standalone] package.
 
-Take note that https://tex.stackexchange.com/q/356278[the package does not detect whether a document is the root or not] since it is not designed this way. 
-In order to make it possible, I've created a little package https://tex.stackexchange.com/a/356466[based on the answer on the previously linked Stack Exchange thread]. 
-You can find it at https://github.com/foo-dogsquared/latex-templates/blob/master/styles/docs-ifrootdocument.sty[my LaTeX templates]. 
+Take note that https://tex.stackexchange.com/q/356278[the package does not detect whether a document is the root or not] since it is not designed this way.
+In order to make it possible, I've created a little package https://tex.stackexchange.com/a/356466[based on the answer on the previously linked Stack Exchange thread].
+You can find it at https://github.com/foo-dogsquared/latex-templates/blob/master/styles/docs-ifrootdocument.sty[my LaTeX templates].
 
-With the custom package, you can now conditionally render a part of the LaTeX document if the document is compiled as the root or as an imported document. 
+With the custom package, you can now conditionally render a part of the LaTeX document if the document is compiled as the root or as an imported document.
 
 [source,latex]
 ----
 \begin{document}
 
 \ifrootdocument
-  Congratulations! 
-  This will be rendered. 
-  This document is the root level. 
-\else 
+  Congratulations!
+  This will be rendered.
+  This document is the root level.
+\else
   No congrats for you! :(
 \fi
 
 \end{document}
 ----
 
-The package is mostly used for two things: 
+The package is mostly used for two things:
 
-* Compiling LaTeX standalone documents with their own content such as the preface, table of content, bibliography, and many others. 
-* Easy combining of LaTeX documents under one master book and the like. 
+* Compiling LaTeX standalone documents with their own content such as the preface, table of content, bibliography, and many others.
+* Easy combining of LaTeX documents under one master book and the like.
 
 
 
 
 == Using packages
 
-* Use minimal amount of packages as much as possible. 
-* The hard cap of the total imported third-party packages is set at 30 packages (not including LuaTeX packages, https://www.ctan.org/pkg/fontspec[fontspec], https://www.ctan.org/pkg/babel[babel], and https://www.ctan.org/pkg/polyglossia[polyglossia]). 
-* Common packages between modular documents should be handled in a style file. 
-* Like how most of the LaTeX users would say, the https://ctan.org/pkg/hyperref[hyperref] package should be the last third-party package to be loaded to prevent package clashes. 
+* Use minimal amount of packages as much as possible.
+* The hard cap of the total imported third-party packages is set at 30 packages (not including LuaTeX packages, https://www.ctan.org/pkg/fontspec[fontspec], https://www.ctan.org/pkg/babel[babel], and https://www.ctan.org/pkg/polyglossia[polyglossia]).
+* Common packages between modular documents should be handled in a style file.
+* Like how most of the LaTeX users would say, the https://ctan.org/pkg/hyperref[hyperref] package should be the last third-party package to be loaded to prevent package clashes.
 
 
 
 
-== Labels and cross-referencing 
+== Labels and cross-referencing
 
-LaTeX provides labels for cross-referencing to different content with the `\label` command. 
-The command accepts a string that contain whatever your heart desires as the required parameter. 
+LaTeX provides labels for cross-referencing to different content with the `\label` command.
+The command accepts a string that contain whatever your heart desires as the required parameter.
 
-To keep referencing clean, organized, and easy, you should prefix your label name according to the type of content it refers to. 
-This is also the recommended practice by most of the community as some of the packages rely on it as the metadata. 
+To keep referencing clean, organized, and easy, you should prefix your label name according to the type of content it refers to.
+This is also the recommended practice by most of the community as some of the packages rely on it as the metadata.
 
-Here are some guidelines for the labelling: 
+Here are some guidelines for the labelling:
 
-* Separate the prefix and the label name with `{label-prefix-indicator}` (e.g., `label{label-prefix-indicator}Name of the label`). 
-* The label name should be in sentence case to easily write and remember the label. 
-* Use the common prefixes listed below. 
-* When making a cross-reference with `\ref` command, prepend the label with a preferred word listed in the following table. 
+* Separate the prefix and the label name with `{label-prefix-indicator}` (e.g., `label{label-prefix-indicator}Name of the label`).
+* The label name should be in sentence case to easily write and remember the label.
+* Use the common prefixes listed below.
+* When making a cross-reference with `\ref` command, prepend the label with a preferred word listed in the following table.
 
-Here's a table of the common prefixes with the label and cross-references format. 
+Here's a table of the common prefixes with the label and cross-references format.
 
 [cols="5*", options="header"]
 |===
-| Label prefix 
-| Content 
-| Label example 
-| Cross-reference prefix 
-| Cross-reference example 
+| Label prefix
+| Content
+| Label example
+| Cross-reference prefix
+| Cross-reference example
 
-| `algo` 
-| Computer or scientific algorithms. 
+| `algo`
+| Computer or scientific algorithms.
 | `\label{algo{label-prefix-indicator}Evolutionary agents exploration}`
 | `Algorithm`
 | `Algorithm \ref{algo{label-prefix-indicator}Evolutionary agents exploration}`
 
-| `chap` 
-| Chapters of the document (`\chapter`). 
+| `chap`
+| Chapters of the document (`\chapter`).
 | `\label{part{label-prefix-indicator}Your first chapter to life}`
 | `Chapter`
 | `Chapter \ref{part{label-prefix-indicator}Your first chapter to life}`
 
-| `code` 
-| Source code listings. 
+| `code`
+| Source code listings.
 | `\label{code{label-prefix-indicator}Python duck typing}`
 | `Code`
 | `Code \ref{code{label-prefix-indicator}Python duck typing}`
 
-| `defn` 
-| Defined definitions. 
+| `defn`
+| Defined definitions.
 | `\label{defn{label-prefix-indicator}Pollen definition}`
 | `Definition`
 | `Definition \ref{defn{label-prefix-indicator}Pollen definition}`
 
-| `fig` 
-| Figures (including graphics from `tikz` and plots from `pgfplots`) used in the document. 
+| `fig`
+| Figures (including graphics from `tikz` and plots from `pgfplots`) used in the document.
 | `\label{fig{label-prefix-indicator}Duck sitting on the pond}`
 | `Figure`
 | `Figure \ref{fig{label-prefix-indicator}Duck sitting on the pond}`
 
 | `list`
-| A list (either ordered or unordered). 
+| A list (either ordered or unordered).
 | `\label{list{label-prefix-indicator}How to make a duck sandwich}`
 | `List`
 | `List \ref{list{label-prefix-indicator}How to make a duck sandwich}`
 
-| `math` 
-| Mathematical equations and expressions.  
-| `\label{eq{label-prefix-indicator}Fourier transform}` 
+| `math`
+| Mathematical equations and expressions. 
+| `\label{eq{label-prefix-indicator}Fourier transform}`
 | `Equation`
-| `Equation \ref{eq{label-prefix-indicator}Fourier transform}` 
+| `Equation \ref{eq{label-prefix-indicator}Fourier transform}`
 
-| `part` 
-| Parts of the document (`\part`). 
-| `\label{part{label-prefix-indicator}The introduction to ducks}` 
-| `Part` 
-| `Part \ref{part{label-prefix-indicator}The introduction to ducks}` 
+| `part`
+| Parts of the document (`\part`).
+| `\label{part{label-prefix-indicator}The introduction to ducks}`
+| `Part`
+| `Part \ref{part{label-prefix-indicator}The introduction to ducks}`
 
-| `proof` 
-| Mathematical or scientific proofs. 
-| `\label{proof{label-prefix-indicator}Proof of life in Mars}` 
+| `proof`
+| Mathematical or scientific proofs.
+| `\label{proof{label-prefix-indicator}Proof of life in Mars}`
 | `Proof`
-| `Proof \ref{proof{label-prefix-indicator}Proof of life in Mars}` 
+| `Proof \ref{proof{label-prefix-indicator}Proof of life in Mars}`
 
-| `prop` 
-| Defined properties. 
+| `prop`
+| Defined properties.
 | `\label{prop{label-prefix-indicator}Associative property of equality}`
 | `Property`
 | `Property \ref{prop{label-prefix-indicator}Associative property of equality}`
 
-| `sect` 
-| Sections of the document (`\section`). 
+| `sect`
+| Sections of the document (`\section`).
 | `\label{sect{label-prefix-indicator}The first section}`
 | `Section`
 | `Section \ref{sect{label-prefix-indicator}The first section}`
 
-| `subsect` 
-| Subsections of the section (`\subsection`). 
+| `subsect`
+| Subsections of the section (`\subsection`).
 | `\label{subsect{label-prefix-indicator}The first half of the section}`
 | `Subsection`
 | `Subsection \ref{subsect{label-prefix-indicator}The first half of the section}`
 
-| `table` 
-| Tables in the document. 
+| `table`
+| Tables in the document.
 | `\label{table{label-prefix-indicator}Black plague victims}`
 | `Table`
 | `Table \ref{tab{label-prefix-indicator}Black plague victims}`
 
-| `theorem` 
-| Mathematical or scientific theorems. 
+| `theorem`
+| Mathematical or scientific theorems.
 | `\label{theorem{label-prefix-indicator}White hole theorem}`
 | `Theorem`
 | `Theorem \ref{theorem{label-prefix-indicator}White hole theorem}`
@@ -376,20 +376,20 @@ Here's a table of the common prefixes with the label and cross-references format
 
 
 
-== Mathematics 
+== Mathematics
 
-* Use the https://www.ctan.org/pkg/amslatex[AMS LaTeX package]. 
-Specifically, use the https://www.ctan.org/pkg/amsmath[`amsmath`], `amssymb`, and `amsthm` package. 
-* Also, it is recommended to use https://ctan.org/pkg/mathtools[mathtools] CTAN package as well. 
-* Use the `math` prefix for the labels (e.g., `math{label-prefix-indicator}Maxwell's Equations`). 
-* For display mode equations, it is preferred to wrap it under the `equation` environment. 
-* For aligning equations, it is preferred to use the `align` environment. 
-If either side is absent, it is recommended to align the equations in the raw source. 
-* For setting a group of equations under one label, the `gathered` environment is preferred. 
-footnote:not_a_math_env[The given environment is not a math environment. You still have to create the appropriate math environments for typesetting the equation.] 
-* For subnumbering of equations, use the `subequations` environment. 
+* Use the https://www.ctan.org/pkg/amslatex[AMS LaTeX package].
+Specifically, use the https://www.ctan.org/pkg/amsmath[`amsmath`], `amssymb`, and `amsthm` package.
+* Also, it is recommended to use https://ctan.org/pkg/mathtools[mathtools] CTAN package as well.
+* Use the `math` prefix for the labels (e.g., `math{label-prefix-indicator}Maxwell's Equations`).
+* For display mode equations, it is preferred to wrap it under the `equation` environment.
+* For aligning equations, it is preferred to use the `align` environment.
+If either side is absent, it is recommended to align the equations in the raw source.
+* For setting a group of equations under one label, the `gathered` environment is preferred.
+footnote:not_a_math_env[The given environment is not a math environment. You still have to create the appropriate math environments for typesetting the equation.]
+* For subnumbering of equations, use the `subequations` environment.
 footnote:not_a_math_env[]
-* For typesetting piecewise functions inline, use the `cases` environment. 
-* For typesetting piecewise functions in display mode, use `dcases` from the `mathtools` package. 
-You can also use the toggled version (`dcases*`) for disabling perpetual math mode when writing the conditions. 
-The toggled version is the preferred way. 
+* For typesetting piecewise functions inline, use the `cases` environment.
+* For typesetting piecewise functions in display mode, use `dcases` from the `mathtools` package.
+You can also use the toggled version (`dcases*`) for disabling perpetual math mode when writing the conditions.
+The toggled version is the preferred way.
